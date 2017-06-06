@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><strong>openapi.v1.device.sta</strong></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.device.sta</code></h1>
+<p>普通station设备管理 v1.0</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2016 HiWiFi Elite Co., Ltd.</li>
+        <li><strong>Author</strong>: chaogang.liu <chaogang.liu@hiwfii.tw></li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#get_conn_record">get_conn_record (args)</a></td>
+	<td class="summary">获取连接设备记录</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_devicename_list">get_devicename_list ()</a></td>
+	<td class="summary">获取所有设备名称列表</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_history_index">get_history_index ()</a></td>
+	<td class="summary">历史连接设备列表索引</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_sta_stat">get_sta_stat (args)</a></td>
+	<td class="summary">获取设备统计信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#list">list (args)</a></td>
+	<td class="summary">获取列表</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set">set (args)</a></td>
+	<td class="summary">设置信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#syn_device_names">syn_device_names (args)</a></td>
+	<td class="summary">同步设备名称</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "get_conn_record"></a>
+    <strong>get_conn_record (args)</strong>
+    </dt>
+    <dd>
+    获取连接设备记录
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ args={
+   <span class="string">"mac"</span>:<span class="string">"00:11:22:33:44:55"</span>,    // 设备mac
+   <span class="string">"date"</span>:<span class="string">"20160119"</span>                 // 某日的记录，格式年月日
+ }
+
+ app_data={
+   <span class="string">"mac"</span>:<span class="string">"00:11:22:33:44:55"</span>,
+   <span class="string">"record"</span>: [
+     {
+       <span class="string">"onlinetime"</span>:<span class="number">1453170802</span>,
+       <span class="string">"offlinetime"</span>:<span class="number">1453171802</span> //时间戳，如果设备一直在线则无此字段
+     },
+     {
+       <span class="string">"onlinetime"</span>:<span class="number">1453172802</span>,
+       <span class="string">"offlinetime"</span>:<span class="number">1453173802</span>
+     }
+   ]
+   <span class="string">"total_time"</span>:<span class="number">2000</span>  //设备在线时长 单位:秒
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_devicename_list"></a>
+    <strong>get_devicename_list ()</strong>
+    </dt>
+    <dd>
+    获取所有设备名称列表
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ data={
+  <span class="string">"device_name_list"</span>:[
+    {<span class="string">"mac"</span>:<span class="string">"d4:ee:07:18:12:34"</span>,<span class="string">"name"</span>:<span class="string">"卫星star_1234"</span>},
+    {<span class="string">"mac"</span>:<span class="string">"00:21:cc:4a:12:34"</span>,<span class="string">"name"</span>:<span class="string">"abc123"</span>}
+  ]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_history_index"></a>
+    <strong>get_history_index ()</strong>
+    </dt>
+    <dd>
+    历史连接设备列表索引
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ app_data
+ {
+   <span class="string">"index"</span>:[
+      <span class="string">"20160408"</span>,
+      <span class="string">"20160407"</span>,
+      <span class="string">"20160406"</span>
+   ]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_sta_stat"></a>
+    <strong>get_sta_stat (args)</strong>
+    </dt>
+    <dd>
+    获取设备统计信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ args={
+ }
+
+ app_data={
+    <span class="string">"max_w2p4g"</span>: <span class="number">32</span>, //最大可连接的<span class="number">2.4</span>G设备数量
+    <span class="string">"max_w5g"</span>: <span class="number">32</span>, //最大可连接的<span class="number">5</span>G设备数量
+    <span class="string">"max_lan"</span>: <span class="number">6</span>, //最大可连接的有线设备数量
+    <span class="string">"all_cnt"</span>: <span class="number">12</span>, //总共连接过的设备数量（包括在线跟离线的）
+    <span class="string">"online_wire_cnt"</span>: <span class="number">1</span>, //在线的有线设备数量
+    <span class="string">"online_w2p4g_guest_cnt"</span>: <span class="number">3</span>, //在线的<span class="number">2.4</span>G访客设备数量
+    <span class="string">"online_w2p4g_master_cnt"</span>: <span class="number">3</span>, //在线的<span class="number">2.4</span>G主网络设备数量
+    <span class="string">"online_w5g_guest_cnt"</span>: <span class="number">4</span>, //在线的<span class="number">5</span>G访客设备数量
+    <span class="string">"online_w5g_master_cnt"</span>: <span class="number">4</span>, //在线的<span class="number">5</span>G主网络设备数量
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "list"></a>
+    <strong>list (args)</strong>
+    </dt>
+    <dd>
+    获取列表
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ args={
+  date=<span class="string">"20160316"</span>,            // 获取某天连接过的设备，不设置则获取全部,可选项
+  mac=<span class="string">"CC:78:5F:07:D6:13"</span>,    // 获取单台设备,可选项
+  conn_ap=<span class="string">"D4:EE:07:08:35:B4"</span>, // 获取某台路由器/ap/极卫星下的设备,可选项
+  master=<span class="number">1</span>/<span class="number">0</span> //获取主网络<span class="keyword">or</span>访客设备列表,可选项
+ }
+
+ app_data={
+  <span class="string">"list"</span>: [
+   {
+    <span class="string">"mac"</span>: <span class="string">"F8:BC:12:9E:A6:3A"</span>,
+    <span class="string">"ip"</span>: <span class="string">"192.168.199.230"</span>,
+    <span class="string">"type"</span>: <span class="string">"station"</span>, //<span class="string">"station"</span>/<span class="string">"iot"</span>/<span class="string">"ap"</span>/<span class="string">"star"</span>
+    <span class="string">"name"</span>: <span class="string">"wenjue-pc"</span>,
+    <span class="string">"conn_ap"</span>: <span class="string">"D4:EE:07:08:35:B4"</span>,
+    <span class="string">"conn_aptype"</span>: <span class="string">"star"</span>, //<span class="string">"ap"</span>/<span class="string">"router"</span>
+    <span class="string">"rssi"</span>: <span class="number">0</span>, //已经计算完成的信号强度
+　  <span class="string">"phy"</span>: <span class="string">"2.4G"</span>, //<span class="string">"2.4G"</span>/<span class="string">"5G"</span>/<span class="string">"wire"</span>/<span class="string">"usb"</span>/<span class="string">"bt"</span>
+    <span class="string">"master"</span>: <span class="number">1</span>, //主人网络标识，<span class="number">1</span>表示主人网络，<span class="number">0</span>表示访客网络
+    <span class="string">"online"</span>: <span class="number">1</span>, //在线状态，<span class="number">1</span>表示在线，<span class="number">0</span>表示离线
+    <span class="string">"last_online"</span>: <span class="number">1453089011</span>, //最近一次上线时间
+    <span class="string">"last_offline"</span>: <span class="number">0</span>，//最后一次离线时间，<span class="number">0</span>表示设备从未离线
+    <span class="string">"first_online"</span>: <span class="number">1453089011</span>, //第一次接入时间
+   }
+  ]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set"></a>
+    <strong>set (args)</strong>
+    </dt>
+    <dd>
+    设置信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"mac"</span>:<span class="string">"cc:78:5f:70:e7:d6"</span>,
+  <span class="string">"name"</span>:<span class="string">"这是一个手机"</span>
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "syn_device_names"></a>
+    <strong>syn_device_names (args)</strong>
+    </dt>
+    <dd>
+    同步设备名称
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+    <span class="string">"maclist"</span>:[<span class="string">"28:D9:8A:84:8E:F3"</span>,<span class="string">"C8:93:46:45:DF:8C"</span>]
+ }
+ app_data
+ {
+   <span class="string">"index"</span>:[
+      <span class="string">"20160408"</span>,
+      <span class="string">"20160407"</span>,
+      <span class="string">"20160406"</span>
+   ]
+ }</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

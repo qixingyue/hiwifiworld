@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><strong>openapi.v1.wan.vpn</strong></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.wan.vpn</code></h1>
+<p>L2TP/PPTP Interfaces for HiWiFi</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2015 HiWiFi Elite Co., Ltd.</li>
+        <li><strong>Author</strong>: Jiaming Liu <jiaming.liu@hiwifi.tw></li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#get">get (nil)</a></td>
+	<td class="summary">获取l2tp/pptd VPN设置</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#restart">restart (nil)</a></td>
+	<td class="summary">停止l2tp/pptp VPN</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set">set (args)</a></td>
+	<td class="summary">设置l2tp/pptp VPN</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#start">start (nil)</a></td>
+	<td class="summary">开启l2tp/pptp VPN</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#stop">stop (nil)</a></td>
+	<td class="summary">停止l2tp/pptp VPN</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "get"></a>
+    <strong>get (nil)</strong>
+    </dt>
+    <dd>
+    获取l2tp/pptd VPN设置
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">nil</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> result = get()
+
+ data = {
+      proto = <span class="string">"l2tp"</span>,
+      username = <span class="string">"yourusername"</span>,
+      password = <span class="string">"yourpassword"</span>,
+      server = <span class="string">"yourserver.com"</span>,
+      mode = <span class="string">"global/route/smart"</span>,
+      routes = {<span class="string">"192.168.5.0/255.255.255.0"</span>, <span class="string">"10.1.10.0/255.255.252.0"</span>} <span class="comment">-- 若route模式
+</span>      defaultroute = <span class="string">"0"</span>,
+      auto = <span class="string">'0'</span>,
+      peerdns = <span class="string">'1'</span>,
+      dns_list = {<span class="string">"8.8.8.8"</span>, <span class="string">"4.4.4.4"</span>},
+      mppe = <span class="string">'1'</span>,
+      status = <span class="string">"dialing"</span>,
+		l2tp_encrypt = <span class="string">"1"</span>,
+		shared_secrets = <span class="string">"vpn"</span>,
+      error = <span class="string">'0'</span>
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "restart"></a>
+    <strong>restart (nil)</strong>
+    </dt>
+    <dd>
+    停止l2tp/pptp VPN
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">nil</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">result = restart()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set"></a>
+    <strong>set (args)</strong>
+    </dt>
+    <dd>
+    设置l2tp/pptp VPN
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> result = set(args)
+
+ args = {
+     proto = <span class="string">"l2tp"</span>,
+     username = <span class="string">"test110"</span>,
+     password = <span class="string">"yourpassword"</span>,
+     server = <span class="string">"your.vpn.server"</span>,
+     mode = <span class="string">"global/route/smart"</span>
+     routes = {<span class="string">"192.168.5.0/24"</span>, <span class="string">"10.1.10.243"</span>, <span class="string">"10.3.21.34/255.255.252.0"</span>}, <span class="comment">--若route模式
+</span>     auto = <span class="string">'1'</span>,
+     peerdns = <span class="string">'1'</span>,
+     mppe = <span class="string">"1"</span>,   <span class="comment">--超强加密，1为使用，0为不使用
+</span>     l2tp_encrypt = <span class="string">"1"</span>, <span class="comment">--ipsec加密，1为使用，0为不使用
+</span>     shared_secrets = <span class="string">"vpn"</span> <span class="comment">--共享密钥
+</span> }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "start"></a>
+    <strong>start (nil)</strong>
+    </dt>
+    <dd>
+    开启l2tp/pptp VPN
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">nil</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">result = start()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "stop"></a>
+    <strong>stop (nil)</strong>
+    </dt>
+    <dd>
+    停止l2tp/pptp VPN
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">nil</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">result = stop()</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

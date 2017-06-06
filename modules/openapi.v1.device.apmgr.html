@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><strong>openapi.v1.device.apmgr</strong></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.device.apmgr</code></h1>
+<p>极卫星的相关接</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2014 HiWiFi Elite Co., Ltd.</li>
+        <li><strong>Author</strong>: chaogang.liu</li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#ap_disable">ap_disable (args)</a></td>
+	<td class="summary">停止ap模式</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ap_enable">ap_enable (args)</a></td>
+	<td class="summary">开启ap模式</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#bind_rpt">bind_rpt (args)</a></td>
+	<td class="summary">绑定极卫星</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#discover_rpt">discover_rpt (args)</a></td>
+	<td class="summary">发现极卫星</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_default_rpt_name">get_default_rpt_name (args)</a></td>
+	<td class="summary">获取极卫星默认名字</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#remote_reboot">remote_reboot (args)</a></td>
+	<td class="summary">主路由重启ap(或极卫星)接口</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#unbind">unbind (args)</a></td>
+	<td class="summary">解除绑定极卫星/AP</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "ap_disable"></a>
+    <strong>ap_disable (args)</strong>
+    </dt>
+    <dd>
+    停止ap模式
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {ap_mac="0c:da:41:3a:c1:87"}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = ap_disable(args)
+ ap_mac 要取消ap模式的设备mac</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "ap_enable"></a>
+    <strong>ap_enable (args)</strong>
+    </dt>
+    <dd>
+    开启ap模式
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {ap_mac="0c:da:41:3a:c1:87"}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = ap_enable(args)
+ ap_mac 要设置为ap模式的设备mac</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "bind_rpt"></a>
+    <strong>bind_rpt (args)</strong>
+    </dt>
+    <dd>
+    绑定极卫星
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {mac="84:3a:4b:de:af:f4"}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = bind_rpt(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "discover_rpt"></a>
+    <strong>discover_rpt (args)</strong>
+    </dt>
+    <dd>
+    发现极卫星
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = discover_rpt(args)
+ data={
+    rpt_list=[
+      {mac=<span class="string">"84:3a:4b:de:af:f4"</span>, rssi=<span class="number">48</span>, smart=<span class="number">1</span>},
+      {mac=<span class="string">"88:30:8a:fb:de:32"</span>, rssi=<span class="number">16</span>, smart=<span class="number">0</span>}
+    ]
+ }
+ rssi=<span class="number">48</span> 信号为<span class="number">48</span>
+ smart=<span class="number">1</span> 支持配对(<span class="number">0</span>为不支持)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_default_rpt_name"></a>
+    <strong>get_default_rpt_name (args)</strong>
+    </dt>
+    <dd>
+    获取极卫星默认名字
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {board_name="name", mac="84:3a:4b:de:af:f4"}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+
+ 如果设备为极卫星："star_name"，
+ 如果不是：board_name
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = get_default_rpt_name(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "remote_reboot"></a>
+    <strong>remote_reboot (args)</strong>
+    </dt>
+    <dd>
+    主路由重启ap(或极卫星)接口
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {mac="d4:33:07:11:22:33"}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = remote_reboot(args)
+
+ args = {
+   mac=<span class="string">"d4:ee:07:11:22:33"</span>, //ff:ff:ff:ff:ff:ff表示重启所有ap(或极卫星)
+ }
+ </pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "unbind"></a>
+    <strong>unbind (args)</strong>
+    </dt>
+    <dd>
+    解除绑定极卫星/AP
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {board_name="name", mac="84:3a:4b:de:af:f4"}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = unbind(args)
+ 超时时间 <span class="number">5</span>s</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

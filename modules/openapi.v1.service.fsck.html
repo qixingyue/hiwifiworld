@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><strong>openapi.v1.service.fsck</strong></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.service.fsck</code></h1>
+<p>磁盘扫描 V1.0</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2016 HiWiFi Elite Co., Ltd.</li>
+        <li><strong>Author</strong>: hao.chen@hiwifi.tw</li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#get_list">get_list ()</a></td>
+	<td class="summary">列出可以扫描的设备</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_state">get_state (opt)</a></td>
+	<td class="summary">获取任务状态.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_report">get_report ()</a></td>
+	<td class="summary">获取扫描结果信息.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cancel">cancel ()</a></td>
+	<td class="summary">终止正在进行的扫描任务.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#check">check (opt)</a></td>
+	<td class="summary">扫描指定设备</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "get_list"></a>
+    <strong>get_list ()</strong>
+    </dt>
+    <dd>
+    列出可以扫描的设备
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ ret = get_list()
+ data={
+    parts: [<span class="string">"/dev/sda"</span>, ..]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_state"></a>
+    <strong>get_state (opt)</strong>
+    </dt>
+    <dd>
+    获取任务状态.
+ 获取任务的状态
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">opt</span>
+         可选参数
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ fsck.stat 说明
+     fask_start   - 正在扫描,   (同一时间 只能扫一个设备)
+     fsck_finish  - 扫描完毕,   (扫描操作已结束, 有扫描记录可以查询)
+     fsck_not_run - 没有扫描任务(没有扫描任务, 也没有扫描记录)
+
+ ret = get_state()
+ //返回值:
+ {
+   <span class="string">"pid"</span>: <span class="number">805</span>,  //进程id, &lt;<span class="number">0</span> 说明未扫描
+   <span class="string">"ret"</span>: <span class="number">1</span>,    //扫描结果, &lt;<span class="number">0</span> 说明未扫描完毕 (或 未扫描)
+   <span class="string">"stat"</span>: <span class="string">"fsck_finish"</span>,                 //扫描状态
+   <span class="string">"part_path"</span>: <span class="string">"\/dev\/mmcblk0"</span>,         //扫描的设备
+   <span class="string">"args"</span>: <span class="string">"-v -C5 -y -f -- callback -m "</span>,//扫描参数
+   <span class="string">"pass"</span>: <span class="number">5</span>,   //扫描进度 <span class="number">0</span>~<span class="number">5</span> 个阶段
+   <span class="string">"cur"</span>: <span class="number">462</span>,  //当前进度 当前阶段 <span class="number">0</span>~max 个刻度
+   <span class="string">"max"</span>: <span class="number">462</span>,
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_report"></a>
+    <strong>get_report ()</strong>
+    </dt>
+    <dd>
+    获取扫描结果信息.
+ report 字段为多行文本,可能会很长
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ ret=get_report()
+ //返回值:
+ {
+     <span class="string">"report"</span>: <span class="string">"line1\nline2..."</span>, //<span class="string">'\n'</span> 换行的多行文本
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "cancel"></a>
+    <strong>cancel ()</strong>
+    </dt>
+    <dd>
+    终止正在进行的扫描任务.
+ 不建议这样做
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = cancel()
+ {
+    <span class="string">"msg"</span>: <span class="string">"killall: hwf-e2fsck: no process killed\n"</span>
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "check"></a>
+    <strong>check (opt)</strong>
+    </dt>
+    <dd>
+    扫描指定设备
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">opt</span>
+         扫描选项,必需
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+    </ul>
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ //调用示例:
+ opt={
+       device: <span class="string">'/dev/mmcblk0p2'</span>, //要扫描的分区, 必需
+      verbose: <span class="keyword">false</span>, //<span class="keyword">true</span>|<span class="keyword">false</span>; 是否获得详细的 report
+        level: <span class="number">1</span>,     //<span class="number">1</span>-<span class="number">4</span>; 扫描深度
+     callback: <span class="string">'n'</span>    //<span class="string">'m'</span> - mount, <span class="string">'u'</span> - umount, <span class="string">'n'</span> - nothing; 扫描完毕后的动作
+ }
+ 或
+ opt={
+         device: <span class="string">'/dev/mmcblk0p2'</span>
+    custom_args: <span class="string">'-v -f -y -- callback -m'</span>, //扫描参数 opt_verbose + opt_level + opt_callback
+ }
+ ret=check(opt)
+
+ //关于扫描深度:
+   <span class="number">1</span>: -f -n       // check <span class="keyword">not</span> change
+   <span class="number">2</span>: -f -y       // check &amp; repair
+   <span class="number">3</span>: -f -y -c    // check &amp; repair &amp; mark_badblock by read only
+   <span class="number">4</span>: -f -y -c -c // check &amp; repair &amp; mark_badblock by non-destructive read-write
+
+ //返回值:
+ 如果已有任务在执行, 返回 <span class="number">0x6020014</span>, 否则 code <span class="number">0</span></pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

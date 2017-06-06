@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><strong>openapi.v1.wireless.guest</strong></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.wireless.guest</code></h1>
+<p>访客网络管理 <br/>
+[ 注意：由于页面上访客网络没有区分2.4G和5G，默认访客网络2.4G和5G是合并的，因此上层调用时，只需要调用2.4G接口就可以了 ]</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2015 HiWiFi Elite Co., Ltd.</li>
+        <li><strong>Author</strong>: han.zhang</li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#get_status">get_status (args)</a></td>
+	<td class="summary">获取访客网络运行状态</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#hide">hide (args)</a></td>
+	<td class="summary">隐藏访客网络</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#merge">merge (args)</a></td>
+	<td class="summary">merge guest to guestac</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_hide_timeout">set_hide_timeout (args)</a></td>
+	<td class="summary">设置访客网络隐藏配置</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_info">set_info (args)</a></td>
+	<td class="summary">设置访客网络信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#start">start (args)</a></td>
+	<td class="summary">开启访客模式</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#stop">stop (args)</a></td>
+	<td class="summary">停用访客网络</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "get_status"></a>
+    <strong>get_status (args)</strong>
+    </dt>
+    <dd>
+    获取访客网络运行状态
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {type}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> args = {
+   <span class="global">type</span>=<span class="string">"guest"</span>|<span class="string">"guestac"</span>
+ }
+ ret = get_status(args)
+ data = {
+          support=<span class="number">1</span>|<span class="number">0</span>,  #<span class="number">1</span>代表支持<span class="number">2.4</span>G/<span class="number">5</span>G的访客网络，<span class="number">0</span>代表不支持
+          ssid=<span class="string">"-HiWiFi-Guest-xxx"</span>,
+          work=<span class="number">1</span>|<span class="number">0</span>,
+          show=<span class="number">1</span>|<span class="number">0</span>,
+          start_time=<span class="number">1424862334</span>,
+          stop_time=<span class="number">1424905534</span>,
+          show_time=<span class="number">1424862334</span>,
+          hide_time=<span class="number">1424862454</span>,
+          online_count=<span class="number">12</span>,  #当前连接到<span class="number">2.4</span>G/<span class="number">5</span>G的设备数（只包括访客网络）
+          max_online_count=<span class="number">32</span>,  #最大允许连接<span class="number">2.4</span>G/<span class="number">5</span>G的设备数
+          free_count=<span class="number">20</span>,  #<span class="number">2.4</span>G/<span class="number">5</span>G剩余允许连接数
+          allow_link=o|<span class="number">1</span>,  #是否允许新设备连接
+          systime=<span class="number">1426565275</span>,  #系统时间
+          hide_timeout=<span class="number">0</span>|<span class="number">2</span>,  #<span class="number">0</span>为不隐藏，<span class="number">2</span>为<span class="number">2</span>分钟后隐藏
+          stop_timeout=<span class="number">0</span>|<span class="number">720</span>,  #<span class="number">0</span>为不停用，<span class="number">720</span>为<span class="number">720</span>分钟后停用
+          key=<span class="string">"abcd1234"</span>|<span class="string">""</span>,  #密码
+          encryption=<span class="string">"none"</span>|<span class="string">"mixed-psk"</span>  #加密方式
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "hide"></a>
+    <strong>hide (args)</strong>
+    </dt>
+    <dd>
+    隐藏访客网络
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {type}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> args = {
+   <span class="global">type</span>=<span class="string">"guest"</span>|<span class="string">"guestac"</span>
+ }
+ ret = hide(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "merge"></a>
+    <strong>merge (args)</strong>
+    </dt>
+    <dd>
+    merge guest to guestac
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = merge(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_hide_timeout"></a>
+    <strong>set_hide_timeout (args)</strong>
+    </dt>
+    <dd>
+    设置访客网络隐藏配置
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {type, hide_timeout}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> args = {
+   <span class="global">type</span>=<span class="string">"guest"</span>|<span class="string">"guestac"</span>,
+   hide_timeout=<span class="number">2</span>|<span class="number">0</span>  // <span class="number">0</span>为不隐藏，<span class="number">2</span>为<span class="number">2</span>分钟后隐藏
+ }
+ ret = set_hide_timeout(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_info"></a>
+    <strong>set_info (args)</strong>
+    </dt>
+    <dd>
+    设置访客网络信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {type, ssid, encryption, key}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> args = {
+   <span class="global">type</span>=<span class="string">"guest"</span>|<span class="string">"guestac"</span>,
+   ssid=<span class="string">"hiwifi123"</span>,
+   encryption=<span class="string">"none"</span>|<span class="string">"mixed-psk"</span>,
+   key=<span class="string">"abcd1234"</span>
+ }
+ ret = set_info(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "start"></a>
+    <strong>start (args)</strong>
+    </dt>
+    <dd>
+    开启访客模式
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {type, hide_timeout, stop_timeout}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> args = {
+   <span class="global">type</span>=<span class="string">"guest"</span>|<span class="string">"guestac"</span>,
+   hide_timeout=<span class="number">2</span>,      // 多少分钟后隐藏，默认<span class="number">2</span>分钟，<span class="number">0</span>为不隐藏
+   stop_timeout=<span class="number">0</span>       // 多少分钟后关闭访客网络，默认<span class="number">0</span>不关闭
+ }
+ ret = start(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "stop"></a>
+    <strong>stop (args)</strong>
+    </dt>
+    <dd>
+    停用访客网络
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {type}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> args = {
+   <span class="global">type</span>=<span class="string">"guest"</span>|<span class="string">"guestac"</span>
+ }
+ ret = stop(args)</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

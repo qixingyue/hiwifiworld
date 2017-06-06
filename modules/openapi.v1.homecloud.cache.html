@@ -1,0 +1,1012 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><strong>openapi.v1.homecloud.cache</strong></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.homecloud.cache</code></h1>
+<p>下载器相关接口</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2014 HiWiFi Elite Co., Ltd.</li>
+        <li><strong>Author</strong>: longfei.qiao </li> <li><strong>Maintainer</strong>: hao.chen@hiwifi.tw</li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_add">prefetch_add (data, env)</a></td>
+	<td class="summary">添加下载任务</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_clean_finished">prefetch_clean_finished (data, env)</a></td>
+	<td class="summary">清除已完成任务(不删除已下载文件)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_clean_unfinished">prefetch_clean_unfinished (data, env)</a></td>
+	<td class="summary">清除未完成任务(删除所有相关的临时文件)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_init">prefetch_init (data, env)</a></td>
+	<td class="summary">清空文件夹，重新初始化环境</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_list">prefetch_list (data, env)</a></td>
+	<td class="summary">查询所有下载文件的状态</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_list_finished">prefetch_list_finished (data, env)</a></td>
+	<td class="summary">查询所有已完成的下载任务的状态(已完成表示正确下载,complete)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_list_unfinished">prefetch_list_unfinished (data, env)</a></td>
+	<td class="summary">列出未完成任务(active,paused,waiting,error)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_pause">prefetch_pause (data, env)</a></td>
+	<td class="summary">暂停下载任务</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_pauseall">prefetch_pauseall (data, env)</a></td>
+	<td class="summary">强制暂停所有下载任务</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_progress">prefetch_progress (data, env)</a></td>
+	<td class="summary">查询任务的详细下载状态</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_remove">prefetch_remove (data, env)</a></td>
+	<td class="summary">删除下载任务</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_uncheck">prefetch_uncheck (data, env)</a></td>
+	<td class="summary">某个时间点之后未查看且已完成的任务个数</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_unpause">prefetch_unpause (data, env)</a></td>
+	<td class="summary">恢复下载被暂停的任务</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#prefetch_unpauseall">prefetch_unpauseall (data, env)</a></td>
+	<td class="summary">恢复所有暂停的下载任务</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "prefetch_add"></a>
+    <strong>prefetch_add (data, env)</strong>
+    </dt>
+    <dd>
+    添加下载任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ ret = prefetch_add(data)
+ 输入参数
+ {
+  <span class="string">"task_list"</span>:[  //推送的任务列表，为数组格式, 只有d_url是必须的
+    {
+      <span class="string">"partition"</span>:<span class="string">"/dev/sda"</span>, //下载磁盘,如果不填，默认用/tmp/data 所链接的位置
+      <span class="string">"i_url"</span>:<span class="string">"http://baidu.com"</span>, //映射地址，本地下载是路由器的拦截地址
+      <span class="string">"d_url"</span>:<span class="string">"http://baidu.com"</span>,//下载地址，推送时路由器下载文件的源地址
+      <span class="string">"task_tag"</span>: <span class="string">"超人归来"</span>,
+      <span class="string">"force_redownload"</span>: <span class="string">"0"</span>|<span class="string">"1"</span> //<span class="number">1</span>强制重新下载，
+      <span class="string">"http_headers"</span>:[  // header
+        <span class="string">"cookie: downloadKey=ee5289dee2a7d14de8d04e7487a0de01"</span>
+      ]
+    }
+  ]
+ }
+
+ 输出参数
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">"成功"</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">"urllist add success"</span>,
+     <span class="string">"app_data"</span>: {
+          <span class="string">"task_list"</span>:[  //返回的任务列表的状态
+             {
+                <span class="string">"code"</span>: <span class="number">0</span>,
+                <span class="string">"msg"</span>: <span class="string">"add success"</span>,
+                <span class="string">"data"</span>: {
+        	          <span class="string">"d_url"</span>: <span class="string">"http://www.baidu.com"</span>,
+        	          <span class="string">"gid"</span>: <span class="string">"f46b7fd4dd9a2292"</span>,
+        	          <span class="string">"task_tag"</span>: <span class="string">"超人归来"</span>
+                }
+            },
+            {
+                <span class="string">"code"</span>: <span class="number">1</span>,
+                <span class="string">"msg"</span>: <span class="string">"url不合法|资源不存在"</span>,
+                <span class="string">"data"</span>: {
+        	          <span class="string">"d_url"</span>: <span class="string">"http://www.baidu.com"</span>,
+        	          <span class="string">"gid"</span>: <span class="string">"f46b7fd4dd9a2292"</span>,
+        	          <span class="string">"task_tag"</span>: <span class="string">"超人归来"</span>
+                }
+            }
+          ]
+     }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_clean_finished"></a>
+    <strong>prefetch_clean_finished (data, env)</strong>
+    </dt>
+    <dd>
+    清除已完成任务(不删除已下载文件)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ ret = prefetch_clean_unfinished(data)
+
+ 输入
+ {}
+
+ 输出
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">"成功"</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">"clean success"</span>,
+     <span class="string">"app_data"</span>: {}
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_clean_unfinished"></a>
+    <strong>prefetch_clean_unfinished (data, env)</strong>
+    </dt>
+    <dd>
+    清除未完成任务(删除所有相关的临时文件)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ ret = prefetch_clean_unfinished(data)
+
+ 输入
+ {}
+
+ 输出
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">"成功"</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">"clean success"</span>,
+     <span class="string">"app_data"</span>: {}
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_init"></a>
+    <strong>prefetch_init (data, env)</strong>
+    </dt>
+    <dd>
+    清空文件夹，重新初始化环境
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = prefetch_init(data)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_list"></a>
+    <strong>prefetch_list (data, env)</strong>
+    </dt>
+    <dd>
+    查询所有下载文件的状态
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ ret = prefetch_list()
+ 输入
+ {
+   <span class="string">"last_gid"</span>: <span class="string">"3dce418cfbc930dd|0"</span>,  //gid为上次取列表时取到的最后一个任务id，如果是第一次取，gid = <span class="string">"0"</span>
+   <span class="string">"task_count"</span>:<span class="number">2</span> //取出的任务数量
+ }
+ 输出
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">"成功"</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">""</span>,
+     <span class="string">"app_data"</span>: {
+        <span class="string">"task_total_num"</span>: <span class="number">10</span>,  //列表中结果的总长度
+        <span class="string">"task_last_gid"</span>: <span class="string">"3dce418cfbc930dd|0"</span>, //正常情况下应该返回的是输入的gid，如果输入的未找到，则返回<span class="string">"0"</span>
+        <span class="string">"task_list"</span>: [  //返回的任务列表的状态
+           {
+              <span class="string">"gid"</span>: <span class="string">"3dce418cfbc930dd"</span>,//任务唯一编码
+
+              <span class="string">"status"</span>: <span class="string">"complete"</span>,//状态  ，包含： active|error|waiting|paused
+              <span class="string">"error_code"</span>: <span class="string">"0"</span>,//内部错误编码
+              <span class="string">"error_msg"</span>: <span class="string">""</span>,//内部错误编码对应的错误信息
+
+              <span class="string">"task_type"</span>:<span class="string">""</span>, <span class="comment">-- 任务类型，取url前缀  http|https|ftp|magnet
+</span>              <span class="string">"task_tag"</span>:<span class="string">""</span>, <span class="comment">-- 任务标示，比如"xxxx电视剧"
+</span>
+              <span class="string">"task_index"</span>: <span class="number">3</span>,//和传进来的时候的start，stop对应的一个任务编号
+
+              <span class="string">"filename"</span>: <span class="string">"index.html"</span>,// 文件名
+              <span class="string">"filename_show"</span>: <span class="string">"index.html"</span>,//文件显示名称，根据不同策略和文件类型不一样
+              <span class="string">"dir_name"</span>:<span class="string">""</span>, <span class="comment">--文件夹名，用于磁力链
+</span>              <span class="string">"files"</span>: {}, <span class="comment">--文件列表，用于磁力链
+</span>
+              <span class="string">"access_dir"</span>: <span class="string">""</span>,//文件存储的目录，可直接访问
+
+              <span class="string">"time_start"</span>: <span class="string">"1401777178"</span>,//下载开始时间
+              <span class="string">"time_stop"</span>: <span class="string">"1401777178"</span>,//下载完成时间
+              <span class="string">"download_time"</span>: <span class="string">"112"</span>,//已下载时间(active的时候才有)
+
+              <span class="string">"d_url"</span>: <span class="string">"http://www.baidu.com"</span>,//下载地址
+              <span class="string">"i_url"</span>: <span class="string">"http://www.baidu.com"</span>,//映射地址
+
+              <span class="string">"total_length"</span>: <span class="number">527511234</span>,//文件总长度,数字类型
+              <span class="string">"completed_length"</span>: <span class="number">1401777178</span>,//已下载完的大小(active的时候才有),数字类型
+              <span class="string">"download_speed"</span>: <span class="number">117493</span>//当前下载速度(active的时候才有),数字类型
+           }
+        ]
+      }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_list_finished"></a>
+    <strong>prefetch_list_finished (data, env)</strong>
+    </dt>
+    <dd>
+    查询所有已完成的下载任务的状态(已完成表示正确下载,complete)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ ret = prefetch_list()
+ 输入
+ {
+   <span class="string">"last_gid"</span>: <span class="string">"3dce418cfbc930dd"</span>,  //gid为上次取列表时取到的最后一个任务id，如果是第一次取，gid = <span class="string">"0"</span>
+   <span class="string">"task_count"</span>:<span class="number">2</span> //取出的任务数量
+ }
+ 输出
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">"成功"</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">""</span>,
+     <span class="string">"app_data"</span>: {
+        <span class="string">"task_total_num"</span>:<span class="string">""</span>,  //列表中结果的总长度
+        <span class="string">"task_list"</span>:[  //返回的任务列表的状态
+           {
+              <span class="string">"gid"</span>: <span class="string">"3dce418cfbc930dd"</span>,//任务唯一编码
+
+              <span class="string">"status"</span>: <span class="string">"complete"</span>,//状态  ，包含： active|error|waiting|paused
+              <span class="string">"error_code"</span>: <span class="string">"0"</span>,//内部错误编码
+              <span class="string">"error_msg"</span>: <span class="string">""</span>,//内部错误编码对应的错误信息
+
+              <span class="string">"task_type"</span>:<span class="string">""</span>, <span class="comment">-- 任务类型，取url前缀  http|https|ftp|magnet
+</span>              <span class="string">"task_tag"</span>:<span class="string">""</span>, <span class="comment">-- 任务标示，比如"xxxx电视剧"
+</span>
+              <span class="string">"task_index"</span>: <span class="number">3</span>,//和传进来的时候的start，stop对应的一个任务编号
+
+              <span class="string">"filename"</span>: <span class="string">"index.html"</span>,// 文件名
+              <span class="string">"filename_show"</span>: <span class="string">"index.html"</span>,//文件显示名称，根据不同策略和文件类型不一样
+              <span class="string">"dir_name"</span> : <span class="string">""</span>, <span class="comment">--文件夹名，用于磁力链
+</span>              <span class="string">"files"</span>: {}, <span class="comment">--文件列表，用于磁力链
+</span>
+              <span class="string">"access_dir"</span>: <span class="string">""</span>,//文件存储的目录，可直接访问
+
+              <span class="string">"time_start"</span>: <span class="string">"1401777178"</span>,//下载开始时间
+              <span class="string">"time_stop"</span>: <span class="string">"1401777178"</span>,//下载完成时间
+              <span class="string">"download_time"</span>: <span class="string">"112"</span>,//已下载时间(active的时候才有)
+
+              <span class="string">"d_url"</span>: <span class="string">"http://www.baidu.com"</span>,//下载地址
+              <span class="string">"i_url"</span>: <span class="string">"http://www.baidu.com"</span>,//映射地址
+
+              <span class="string">"total_length"</span>: <span class="number">527511234</span>,//文件总长度,数字类型
+              <span class="string">"completed_length"</span>: <span class="number">1401777178</span>,//已下载完的大小(active的时候才有),数字类型
+              <span class="string">"download_speed"</span>: <span class="number">117493</span>//当前下载速度(active的时候才有),数字类型
+           }
+         ]
+      }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_list_unfinished"></a>
+    <strong>prefetch_list_unfinished (data, env)</strong>
+    </dt>
+    <dd>
+    列出未完成任务(active,paused,waiting,error)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ ret = prefetch_list_unfinished(data)
+
+ 输入
+ {
+   <span class="string">"last_gid"</span>: <span class="string">"3dce418cfbc930dd"</span>,  //gid为上次取列表时取到的最后一个任务id，如果是第一次取，gid = <span class="string">"0"</span>
+   <span class="string">"task_count"</span>:<span class="number">2</span> //取出的任务数量
+ }
+
+ 输出
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">"成功"</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">""</span>,
+     <span class="string">"app_data"</span>: {
+        <span class="string">"task_total_num"</span>:<span class="string">""</span>,  //列表中结果的总长度
+        <span class="string">"task_list"</span>:[  //返回的任务列表的状态
+           {
+              <span class="string">"gid"</span>: <span class="string">"3dce418cfbc930dd"</span>,//任务唯一编码
+
+              <span class="string">"status"</span>: <span class="string">"complete"</span>,//状态  ，包含： active|error|waiting|paused
+              <span class="string">"error_code"</span>: <span class="string">"0"</span>,//内部错误编码
+              <span class="string">"error_msg"</span>: <span class="string">""</span>,//内部错误编码对应的错误信息
+
+              <span class="string">"task_type"</span>:<span class="string">""</span>, <span class="comment">-- 任务类型，取url前缀  http|https|ftp|magnet
+</span>              <span class="string">"task_tag"</span>:<span class="string">""</span>, <span class="comment">-- 任务标示，比如"xxxx电视剧"
+</span>
+              <span class="string">"task_index"</span>: <span class="number">3</span>,//和传进来的时候的start，stop对应的一个任务编号
+
+              <span class="string">"filename"</span>: <span class="string">"index.html"</span>,// 文件名
+              <span class="string">"filename_show"</span>: <span class="string">"index.html"</span>,//文件显示名称，根据不同策略和文件类型不一样
+              <span class="string">"dir_name"</span> : <span class="string">""</span>, <span class="comment">--文件夹名，用于磁力链
+</span>              <span class="string">"files"</span>: {}, <span class="comment">--文件列表，用于磁力链
+</span>
+              <span class="string">"access_dir"</span>: <span class="string">""</span>,//文件存储的目录，可直接访问
+
+              <span class="string">"time_start"</span>: <span class="string">"1401777178"</span>,//下载开始时间
+              <span class="string">"time_stop"</span>: <span class="string">"1401777178"</span>,//下载完成时间
+              <span class="string">"download_time"</span>: <span class="string">"112"</span>,//已下载时间(active的时候才有)
+
+              <span class="string">"d_url"</span>: <span class="string">"http://www.baidu.com"</span>,//下载地址
+              <span class="string">"i_url"</span>: <span class="string">"http://www.baidu.com"</span>,//映射地址
+
+              <span class="string">"total_length"</span>: <span class="number">527511234</span>,//文件总长度,数字类型
+              <span class="string">"completed_length"</span>: <span class="number">1401777178</span>,//已下载完的大小(active的时候才有),数字类型
+              <span class="string">"download_speed"</span>: <span class="number">117493</span>//当前下载速度(active的时候才有),数字类型
+           }
+         ]
+      }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_pause"></a>
+    <strong>prefetch_pause (data, env)</strong>
+    </dt>
+    <dd>
+    暂停下载任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ ret = prefetch_pause(data)
+ 输入参数
+ {
+  <span class="string">"task_list"</span>:[    //除添加任务以外，统一用下载地址对任务进行操作
+    {
+      <span class="string">"key"</span>:<span class="string">"gid"</span>|<span class="string">"d_url"</span>,  //支持用gid或者d_url查询任务状态，优先使用gid
+      <span class="string">"value"</span>: <span class="string">"fdsaf|http://www.baidu.com"</span>
+    }
+  ]
+ }
+
+ 输出参数
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">""</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">"暂停成功"</span>,
+     <span class="string">"app_data"</span>: {
+          <span class="string">"task_list"</span>:[  //返回的任务列表的状态
+            {
+                <span class="string">"code"</span>: <span class="number">0</span>,
+                <span class="string">"msg"</span>: <span class="string">"rm success"</span>,
+                <span class="string">"data"</span>: {},
+                <span class="string">"$key"</span>: <span class="string">"$value"</span> //输入的任务的参数
+            }
+          ]
+     }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_pauseall"></a>
+    <strong>prefetch_pauseall (data, env)</strong>
+    </dt>
+    <dd>
+    强制暂停所有下载任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = prefetch_pauseall(data)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_progress"></a>
+    <strong>prefetch_progress (data, env)</strong>
+    </dt>
+    <dd>
+    查询任务的详细下载状态
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ ret = prefetch_progress(data)
+ 输入参数
+ {
+  <span class="string">"task_list"</span>:[    //除添加任务以外，统一用下载地址对任务进行操作
+    {
+      <span class="string">"key"</span>:<span class="string">"gid"</span>|<span class="string">"d_url"</span>,  //支持用gid或者d_url查询任务状态，优先使用gid
+      <span class="string">"value"</span>: <span class="string">"fdsaf|http://www.baidu.com"</span>
+    }
+  ]
+ }
+ 输出结果
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">"成功"</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">"query success"</span>,
+     <span class="string">"app_data"</span>: {
+        <span class="string">"task_list"</span>:[  //返回的任务列表的状态
+           {
+              <span class="string">"gid"</span>: <span class="string">"3dce418cfbc930dd"</span>,//任务唯一编码
+              <span class="string">"status"</span>: <span class="string">"complete"</span>,//状态  ，包含： active|error|complete|waiting|paused
+
+              <span class="string">"path"</span>: <span class="string">""</span>,//文件存储路径
+              <span class="string">"access_dir"</span>: <span class="string">""</span>,//文件存储的目录，可直接访问
+
+              <span class="string">"filename"</span>: <span class="string">"index.html"</span>,// 文件名
+              <span class="string">"filename_show"</span>: <span class="string">"index.html"</span>,//文件显示名称，根据不同策略和文件类型不一样
+
+              <span class="string">"time_start"</span>: <span class="string">"1401777178"</span>,//下载开始时间
+              <span class="string">"time_stop"</span>: <span class="string">"1401777178"</span>,//下载完成时间
+              <span class="string">"download_time"</span>: <span class="string">"112"</span>,//已下载时间(active的时候才有)
+
+              <span class="string">"d_url"</span>: <span class="string">"http://www.baidu.com"</span>,//下载地址
+              <span class="string">"i_url"</span>: <span class="string">"http://www.baidu.com"</span>,//映射地址
+
+              <span class="string">"error_code"</span>: <span class="string">"0"</span>,//内部错误编码
+              <span class="string">"error_msg"</span>: <span class="string">""</span>,//内部错误编码对应的错误信息
+
+              <span class="string">"total_length"</span>: <span class="number">527511234</span>,//文件总长度,数字类型
+              <span class="string">"completed_length"</span>: <span class="number">1401777178</span>,//已下载完的大小(active的时候才有),数字类型
+              <span class="string">"download_speed"</span>: <span class="number">117493</span>//当前下载速度(active的时候才有),数字类型
+           }
+         ]
+     }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_remove"></a>
+    <strong>prefetch_remove (data, env)</strong>
+    </dt>
+    <dd>
+    删除下载任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ ret = prefetch_remove(data)
+
+ 输入参数
+ {
+  <span class="string">"task_list"</span>:[  //删除的任务列表，为数组格式
+    {
+      <span class="string">"key"</span>:<span class="string">"gid"</span> | <span class="string">"d_url"</span>,  //支持用gid或者d_url查询任务状态，优先使用gid
+      <span class="string">"value"</span>: <span class="string">"dafdasfdsafd"</span>| <span class="string">"http://www.baidu.com"</span> //
+      <span class="string">"rmfile"</span>: <span class="string">"1"</span> //是否删除文件,默认不删除
+    }
+  ]
+ }
+
+ 输出参数
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">"成功"</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">"remove success"</span>,
+     <span class="string">"app_data"</span>: {
+          <span class="string">"task_list"</span>:[  //返回的任务列表的状态
+            {
+                <span class="string">"code"</span>: <span class="number">0</span>,
+                <span class="string">"msg"</span>: <span class="string">"rm success"</span>,
+                <span class="string">"data"</span>: {},
+                <span class="string">"$key"</span>: <span class="string">"$value"</span> //输入的任务的参数
+            }
+          ]
+     }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_uncheck"></a>
+    <strong>prefetch_uncheck (data, env)</strong>
+    </dt>
+    <dd>
+    某个时间点之后未查看且已完成的任务个数
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = prefetch_refresh(data)
+
+ 输入
+ {
+   <span class="string">"last_check"</span>:<span class="string">"1401777178"</span> //上次检查个数时候拿到的时间戳，返回在这个时间点之后完成的任务个数
+ }
+ 输出
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">"成功"</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">""</span>,
+     <span class="string">"app_data"</span>:{
+        <span class="string">"uncheck_num"</span>:<span class="number">5</span>,
+        <span class="string">"last_checked_gid"</span>:<span class="string">"fdafdsafdsafda"</span> //最后一次查看的gid
+      }
+ }
+ </pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_unpause"></a>
+    <strong>prefetch_unpause (data, env)</strong>
+    </dt>
+    <dd>
+    恢复下载被暂停的任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = prefetch_unpause(data)
+
+ ret = prefetch_unpause(data)
+ 输入参数
+ {
+  <span class="string">"task_list"</span>:[    //除添加任务以外，统一用下载地址对任务进行操作
+    {
+      <span class="string">"key"</span>:<span class="string">"gid"</span>|<span class="string">"d_url"</span>,  //支持用gid或者d_url查询任务状态，优先使用gid
+      <span class="string">"value"</span>: <span class="string">"fdsaf|http://www.baidu.com"</span>
+    }
+  ]
+ }
+
+ 输出参数
+ {
+     <span class="string">"code"</span>: <span class="number">0</span>,
+     <span class="string">"msg"</span>: <span class="string">""</span>,
+     <span class="string">"data"</span>: {},
+     <span class="string">"app_code"</span>: <span class="number">0</span>,
+     <span class="string">"app_msg"</span>: <span class="string">"恢复成功"</span>,
+     <span class="string">"app_data"</span>: {
+          <span class="string">"task_list"</span>:[  //返回的任务列表的状态
+            {
+                <span class="string">"code"</span>: <span class="number">0</span>,
+                <span class="string">"msg"</span>: <span class="string">"rm success"</span>,
+                <span class="string">"data"</span>: {},
+                <span class="string">"$key"</span>: <span class="string">"$value"</span> //输入的任务的参数
+            }
+          ]
+     }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "prefetch_unpauseall"></a>
+    <strong>prefetch_unpauseall (data, env)</strong>
+    </dt>
+    <dd>
+    恢复所有暂停的下载任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         {}
+        </li>
+        <li><span class="parameter">env</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = prefetch_unpauseall(data)</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

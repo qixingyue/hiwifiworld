@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><strong>openapi.v1.service.guide</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.service.guide</code></h1>
+<p>首次安装</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2016 HiWiFi Elite Co., Ltd.</li>
+        <li><strong>Author</strong>: chaogang.liu,Zhiyuan Wang <zhiyuan.wang@hiwifi.tw></li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#internet_check">internet_check (args)</a></td>
+	<td class="summary">自动检查上网方式</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_wifi_config_and_sys_pwd">set_wifi_config_and_sys_pwd (args)</a></td>
+	<td class="summary">缓存无线配置和系统密码</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_wifi_config_and_sys_pwd">get_wifi_config_and_sys_pwd (args)</a></td>
+	<td class="summary">获取缓存的无线配置和系统密码</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_agreement_done_active_config">set_agreement_done_active_config (args)</a></td>
+	<td class="summary">首次安装完成
+ 返回无线名称密码和路由器密码</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_step_tag">set_step_tag (args)</a></td>
+	<td class="summary">设置首次安装的关键步骤标记</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_step_tag">get_step_tag (args)</a></td>
+	<td class="summary">获取首次安装的关键步骤标记</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#unsign_is_guide_complete">unsign_is_guide_complete (args)</a></td>
+	<td class="summary">首次安装是否完成</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#report_phone_number">report_phone_number (args)</a></td>
+	<td class="summary">上报用户手机号</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "internet_check"></a>
+    <strong>internet_check (args)</strong>
+    </dt>
+    <dd>
+    自动检查上网方式
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+    </ul>
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = internet_check(args)
+ data = {
+    auto_wan_type = <span class="string">"pppoe"</span>|<span class="string">"dhcp"</span>|<span class="string">"static"</span>|<span class="string">"wisp"</span>,
+    is_eth_link=<span class="number">1</span>|<span class="number">0</span>, // 网线是否连接
+    backup_info={}
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_wifi_config_and_sys_pwd"></a>
+    <strong>set_wifi_config_and_sys_pwd (args)</strong>
+    </dt>
+    <dd>
+    缓存无线配置和系统密码
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_wifi_config_and_sys_pwd(args)
+ args = {
+  wifi_ssid=<span class="string">"hiwifi123"</span>,
+  wifi_key=<span class="string">"pwd123456"</span>|<span class="string">""</span>,
+  sys_password = <span class="string">"admin123"</span>,
+  sys_old_password = <span class="string">"admin"</span>
+ }
+
+ wifi_ssid 无线新名称
+ wifi_key  无线新密码
+ sys_password 路由器新密码
+ sys_old_password 路由器原密码</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_wifi_config_and_sys_pwd"></a>
+    <strong>get_wifi_config_and_sys_pwd (args)</strong>
+    </dt>
+    <dd>
+    获取缓存的无线配置和系统密码
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_wifi_config_and_sys_pwd(args)
+ data = {
+  wifi_ssid=<span class="string">"hiwifi123"</span>,
+  wifi_key=<span class="string">"pwd123456"</span>|<span class="string">""</span>,
+  sys_password = <span class="string">"admin123"</span>,
+  sys_old_password = <span class="string">"admin"</span>
+ }
+
+ 所有参数，如果没有缓存，就是null
+ 完成首次安装后，会被清空</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_agreement_done_active_config"></a>
+    <strong>set_agreement_done_active_config (args)</strong>
+    </dt>
+    <dd>
+    首次安装完成
+ 返回无线名称密码和路由器密码
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_agreement_done_active_config(args)
+ data = {
+  new_ssid=<span class="string">"hiwifi123"</span>,
+  new_key=<span class="string">"pwd123456"</span>|<span class="string">""</span>,
+  wifi_5g_new_ssid=<span class="string">"hiwifi123"</span>|<span class="string">""</span>,
+  wifi_5g_new_key=<span class="string">"pwd123456"</span>|<span class="string">""</span>,
+  new_sys_pwd = <span class="string">"admin123"</span>
+ }
+
+ new_ssid 无线<span class="number">2.4</span>G名称
+ new_key 无线<span class="number">2.4</span>G密码
+ wifi_5g_new_ssid 无线<span class="number">5</span>G名称
+ wifi_5g_new_key 无线<span class="number">5</span>G密码
+ new_sys_pwd 路由器密码</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_step_tag"></a>
+    <strong>set_step_tag (args)</strong>
+    </dt>
+    <dd>
+    设置首次安装的关键步骤标记
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {step_tag="wisp_done", step_data="abc12!@#-="}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_step_tag(args)
+
+ step_tag {<span class="number">1</span>,<span class="number">50</span>} 步骤标记，要求是字符串，描述进行到哪一步
+ step_data {<span class="number">0</span>,<span class="number">1000</span>} 标记的缓存数据</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_step_tag"></a>
+    <strong>get_step_tag (args)</strong>
+    </dt>
+    <dd>
+    获取首次安装的关键步骤标记
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_step_tag(args)
+
+ data = {
+   step_tag=<span class="string">"wisp_done"</span>|null,
+   step_data=<span class="string">"abc12!@#-="</span>|null,
+   tag_time=<span class="number">1437724274</span>|<span class="number">0</span>
+ }
+
+ step_tag 步骤标记，没有标记为null
+ step_data 标记缓存数据，没有为null
+ tag_time 标记的时间，没有标记为<span class="number">0</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "unsign_is_guide_complete"></a>
+    <strong>unsign_is_guide_complete (args)</strong>
+    </dt>
+    <dd>
+    首次安装是否完成
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = unsign_is_guide_complete(args)
+ data = {
+  complete=<span class="number">0</span>|<span class="number">1</span>,   // <span class="number">1</span>表示首次安装完成，<span class="number">0</span>未完成
+  guide_done=<span class="number">0</span>|<span class="number">1</span>   // 首次安装时，会重启一些程序，这些程序执行完时，就是<span class="number">1</span>，仅供辅助判断
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "report_phone_number"></a>
+    <strong>report_phone_number (args)</strong>
+    </dt>
+    <dd>
+    上报用户手机号
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {phone, time}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args = {
+   phone: <span class="string">"1333333333"</span>,
+   time: <span class="number">1468380052872</span> #毫秒数，可选参数
+ }</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

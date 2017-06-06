@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><strong>openapi.v1.network.tester</strong></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.network.tester</code></h1>
+<p>HiWiFi tester api</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2015 HiWiFi Co., Ltd.</li>
+        <li><strong>Author</strong>: Chaogang Liu <chaogang.liu@hiwifi.tw></li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#check_customer_dns">check_customer_dns (args)</a></td>
+	<td class="summary">检查是否开启自定义dns</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#check_dns_optimize">check_dns_optimize (args)</a></td>
+	<td class="summary">启动dns优选检测</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#check_global_vpn">check_global_vpn (args)</a></td>
+	<td class="summary">检查是否开启全局vpn</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_check_dns_optimize_result">get_check_dns_optimize_result (args)</a></td>
+	<td class="summary">获取dns优选检测结果</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_check_dns_optimize_state">get_check_dns_optimize_state (args)</a></td>
+	<td class="summary">获取dns优选检测状态</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_check_report">get_check_report (args)</a></td>
+	<td class="summary">获取检测列表（包含检测报告）</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#start_check_report">start_check_report (args)</a></td>
+	<td class="summary">开始执行检测</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#stop_check_dns_optimize">stop_check_dns_optimize (args)</a></td>
+	<td class="summary">停止dns优选检测</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "check_customer_dns"></a>
+    <strong>check_customer_dns (args)</strong>
+    </dt>
+    <dd>
+    检查是否开启自定义dns
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = check_customer_dns(args)
+
+ data = {
+  <span class="string">"active_override_dns"</span>:<span class="number">1</span>,      // <span class="number">0</span>为未开启自定义dns
+  <span class="string">"override_dns_list"</span>:[<span class="string">"114.114.114.114"</span>,<span class="string">"114.114.115.115"</span>],
+  <span class="string">"inactive_dns_list"</span>:[<span class="string">"192.168.5.7"</span>,<span class="string">"192.168.5.17"</span>]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "check_dns_optimize"></a>
+    <strong>check_dns_optimize (args)</strong>
+    </dt>
+    <dd>
+    启动dns优选检测
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = check_dns_optimize(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "check_global_vpn"></a>
+    <strong>check_global_vpn (args)</strong>
+    </dt>
+    <dd>
+    检查是否开启全局vpn
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = check_global_vpn(args)
+
+ data = {
+  <span class="string">"active_global_vpn"</span>:<span class="number">1</span>,                // <span class="number">1</span>为开启全局vpn，<span class="number">0</span>为未开启
+  <span class="string">"global_vpn_list"</span>:[<span class="string">"pptp"</span>, <span class="string">"autossh"</span>] // 开启的vpn类型列表
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_check_dns_optimize_result"></a>
+    <strong>get_check_dns_optimize_result (args)</strong>
+    </dt>
+    <dd>
+    获取dns优选检测结果
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_check_dns_optimize_result(args)
+ <span class="string">"data"</span>:{
+    <span class="string">"check_state"</span>:<span class="string">"done"</span>,
+    <span class="string">"check_dns_list"</span>:[
+      {
+        <span class="string">"dns_ip"</span>:<span class="string">"192.168.5.7"</span>,
+        <span class="string">"to_baidu"</span>:<span class="string">"5.456ms"</span>,
+        <span class="string">"to_dns_time"</span>:<span class="string">"13ms"</span>,
+        <span class="string">"to_taobao"</span>:<span class="string">"loss"</span>,
+        <span class="string">"to_qq"</span>:<span class="string">"5.115ms"</span>,
+        <span class="string">"to_sina"</span>:<span class="string">"timeout"</span>
+      },
+      {<span class="string">"dns_ip"</span>:<span class="string">"114.114.114.114"</span>,<span class="string">"to_baidu"</span>:<span class="string">"3.428ms"</span>,<span class="string">"to_dns_time"</span>:<span class="string">"2ms"</span>,<span class="string">"to_taobao"</span>:<span class="string">"3.095ms"</span>,<span class="string">"to_qq"</span>:<span class="string">"5.202ms"</span>,<span class="string">"to_sina"</span>:<span class="string">"timeout"</span>},
+      {<span class="string">"dns_ip"</span>:<span class="string">"8.8.8.8"</span>,<span class="string">"to_baidu"</span>:<span class="string">"3.489ms"</span>,<span class="string">"to_dns_time"</span>:<span class="string">"370ms"</span>,<span class="string">"to_taobao"</span>:<span class="string">"3.314ms"</span>,<span class="string">"to_qq"</span>:<span class="string">"5.456ms"</span>,<span class="string">"to_sina"</span>:<span class="string">"39.913ms"</span>},
+      {<span class="string">"dns_ip"</span>:<span class="string">"208.67.222.222"</span>,<span class="string">"to_baidu"</span>:<span class="string">"3.201ms"</span>,<span class="string">"to_dns_time"</span>:<span class="string">"4292ms"</span>,<span class="string">"to_taobao"</span>:<span class="string">"293.386ms"</span>,<span class="string">"to_qq"</span>:<span class="string">"4.922ms"</span>,<span class="string">"to_sina"</span>:<span class="string">"61.224ms"</span>}
+      ]}</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_check_dns_optimize_state"></a>
+    <strong>get_check_dns_optimize_state (args)</strong>
+    </dt>
+    <dd>
+    获取dns优选检测状态
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_check_dns_optimize_state(args)
+ data = {
+   state=<span class="string">"checking"</span>  // checking=正在检测，done=检测成功，stop=用户手动停止检测，或其他方式停止检测，检测可能未完成
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_check_report"></a>
+    <strong>get_check_report (args)</strong>
+    </dt>
+    <dd>
+    获取检测列表（包含检测报告）
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "start_check_report"></a>
+    <strong>start_check_report (args)</strong>
+    </dt>
+    <dd>
+    开始执行检测
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "stop_check_dns_optimize"></a>
+    <strong>stop_check_dns_optimize (args)</strong>
+    </dt>
+    <dd>
+    停止dns优选检测
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = stop_check_dns_optimize(args)</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

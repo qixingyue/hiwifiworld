@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><strong>openapi.v1.device.iot</strong></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.device.iot</code></h1>
+<p>iot管理 v1.0</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2016 HiWiFi Elite Co., Ltd.</li>
+        <li><strong>Author</strong>: chaogang.liu <chaogang.liu@hiwfii.tw></li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#add">add (args)</a></td>
+	<td class="summary">添加智能设备</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#add_cron_job">add_cron_job (args)</a></td>
+	<td class="summary">添加定时任务</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#discover">discover (args)</a></td>
+	<td class="summary">发现可添加的智能设备</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_attr">get_attr (args)</a></td>
+	<td class="summary">获取设备全部属性</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_cron_job">get_cron_job (args)</a></td>
+	<td class="summary">获取定时任务</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#list">list (args)</a></td>
+	<td class="summary">获取列表</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#remove_cron_job">remove_cron_job (args)</a></td>
+	<td class="summary">删除定时任务</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_attr">set_attr (args)</a></td>
+	<td class="summary">设置设备属性信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_devinfo">set_devinfo (args)</a></td>
+	<td class="summary">设置名称等信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_top">set_top (args)</a></td>
+	<td class="summary">置顶某台IOT设备
+ 最后一次置顶的排在第一，上一次置顶的排在第二，依次类推</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#update_cron_job">update_cron_job (args)</a></td>
+	<td class="summary">修改定时任务</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "add"></a>
+    <strong>add (args)</strong>
+    </dt>
+    <dd>
+    添加智能设备
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = add(args)
+ args={
+    vendor=<span class="string">"konke"</span>,
+    mac=<span class="string">"00:20:1B:27:6E:3B"</span>, //可选
+    macs=[ //可选
+      <span class="string">"ab:cd:ef:01:23:45"</span>,
+      <span class="string">"ab:cd:ef:01:23:46"</span>
+  ]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "add_cron_job"></a>
+    <strong>add_cron_job (args)</strong>
+    </dt>
+    <dd>
+    添加定时任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = add_cron_job(args)
+
+ args = {
+  iot_id=<span class="string">"abc123"</span>,      // 设备id
+  vendor=<span class="string">"haier"</span>,       // 厂商
+  action=<span class="string">"set"</span>,         // 要执行的动作，默认set
+  arguments={
+    outletStatus=<span class="number">1</span>|<span class="number">0</span>,   // 比如海尔插座，<span class="number">1</span>为开，<span class="number">0</span>为关
+  },                    // 要执行的动作对应的参数
+  minute=<span class="number">0</span>|<span class="number">59</span>,          // 分
+  hour=<span class="number">0</span>|<span class="number">23</span>,            // 时
+  day=*|<span class="number">1</span>|<span class="number">31</span>,           // 日，<span class="string">"*"</span>默认不限制
+  month=*|<span class="number">1</span>|<span class="number">12</span>,         // 月，<span class="string">"*"</span>默认不限制
+  week=*|<span class="number">0</span>|<span class="number">6</span>,           // 周几，<span class="string">"*"</span>默认不限制
+  repeatflag=<span class="number">1</span>|<span class="number">0</span>        // 是否重复执行，默认<span class="number">1</span>重复，<span class="number">0</span>不重复仅<span class="number">1</span>次
+ }
+
+ data = {
+  job_id=<span class="string">"xyz34455"</span>     // 定时任务id，唯一标识，修改任务时需要
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "discover"></a>
+    <strong>discover (args)</strong>
+    </dt>
+    <dd>
+    发现可添加的智能设备
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = add(args)
+
+ args = {
+ }
+
+ data = {
+  iot_list = {
+    {
+      mac=<span class="string">"ab:cd:ef:12:34:56"</span>,
+      vendor_id=<span class="string">"0x1020"</span>,
+      device_id=<span class="string">"0x01"</span>,
+      vendor_specific=<span class="string">"0x02"</span>,
+      devid=<span class="string">"270532866"</span>  // 原始数据
+    },
+    {
+      mac=<span class="string">"ab:cd:ef:12:34:11"</span>,
+      vendor_id=<span class="string">"0x1020"</span>,
+      device_id=<span class="string">"0x01"</span>,
+      vendor_specific=<span class="string">"0x03"</span>,
+      devid=<span class="string">"270532867"</span>  // 原始数据
+    }
+  }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_attr"></a>
+    <strong>get_attr (args)</strong>
+    </dt>
+    <dd>
+    获取设备全部属性
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ args={
+  <span class="string">"vendor"</span>:<span class="string">"haier"</span>,
+  <span class="string">"iot_id"</span>:<span class="string">"123456789"</span>
+ }
+
+ app_data={
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_cron_job"></a>
+    <strong>get_cron_job (args)</strong>
+    </dt>
+    <dd>
+    获取定时任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_cron_job(args)
+
+ 如果要获取所有设备的所有定时任务，请不要设置这些参数
+ args = {
+  vendor=<span class="string">"haier"</span>,         // 厂商编码，只获取此厂商
+  iot_id=<span class="string">"abc123"</span>,        // 设备id，只获取此设备
+  job_id=<span class="string">"xyz34455"</span>       // 定时任务id，只获取此任务
+ }
+
+ data = {
+  cron_job_list = {           // 定时任务列表
+    {
+      job_id=<span class="string">"xyz344"</span>,        // 定时任务id
+      iot_id=<span class="string">"abc123"</span>,        // 设备id
+      vendor=<span class="string">"haier"</span>,         // 厂商
+      action=<span class="string">"set"</span>,           // 要执行的动作，默认set
+      arguments={
+        outletStatus=<span class="number">1</span>|<span class="number">0</span>,     // 比如海尔插座，<span class="number">1</span>为开，<span class="number">0</span>为关
+      },                      // 要执行的动作对应的参数
+      minute=<span class="number">0</span>|<span class="number">59</span>,            // 分
+      hour=<span class="number">0</span>|<span class="number">23</span>,              // 时
+      day=*|<span class="number">1</span>|<span class="number">31</span>,             // 日
+      month=*|<span class="number">1</span>|<span class="number">12</span>,           // 月
+      week=*|<span class="number">0</span>|<span class="number">6</span>,             // 周几
+      repeatflag=<span class="number">0</span>|<span class="number">1</span>          // 是否重复执行，默认<span class="number">1</span>重复，<span class="number">0</span>不重复仅<span class="number">1</span>次
+    },
+    {
+      job_id=<span class="string">"xyz399"</span>,        // 定时任务id
+      iot_id=<span class="string">"abc777"</span>,        // 设备id
+      vendor=<span class="string">"haier"</span>,         // 厂商
+      action=<span class="string">"set"</span>,           // 要执行的动作，默认set
+      arguments={
+        outletStatus=<span class="number">1</span>|<span class="number">0</span>,     // 比如海尔插座，<span class="number">1</span>为开，<span class="number">0</span>为关
+      },                      // 要执行的动作对应的参数
+      minute=<span class="number">0</span>|<span class="number">59</span>,            // 分
+      hour=<span class="number">0</span>|<span class="number">23</span>,              // 时
+      day=*|<span class="number">1</span>|<span class="number">31</span>,             // 日
+      month=*|<span class="number">1</span>|<span class="number">12</span>,           // 月
+      week=*|<span class="number">0</span>|<span class="number">6</span>,             // 周几
+      repeatflag=<span class="number">0</span>|<span class="number">1</span>          // 是否重复执行，默认<span class="number">1</span>重复，<span class="number">0</span>不重复仅<span class="number">1</span>次
+    }
+  }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "list"></a>
+    <strong>list (args)</strong>
+    </dt>
+    <dd>
+    获取列表
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ args={
+  <span class="string">"vendor"</span>:<span class="string">"haier"</span>,       // vendor为可选字段，不传入时，表示获取所有厂商
+  <span class="string">"argument"</span>:{
+    <span class="string">"group_id"</span>:<span class="string">"234567"</span>   // group_id 为可选字段，不同传入的表现如下：
+                              不传时，获取所有的iot列表;
+                              传入固定某个组id时，获取属于此组id下的所有iot设备列表(仅易能智达使用);
+                              传入的id为空字符串<span class="string">""</span>，表示获取不属于任何组id下的所有iot设备列表;
+  }
+ }
+
+ app_data={
+  <span class="string">"list"</span>: [
+    {
+      <span class="string">"mac"</span>: <span class="string">"60:C5:A8:60:D5:F9"</span>,
+      <span class="string">"ip"</span>: <span class="string">"192.168.199.229"</span>,
+      <span class="string">"model"</span>: <span class="string">"14006001"</span>, //产品型号
+      <span class="string">"name"</span>: <span class="string">"这是一个控制器"</span>,
+      <span class="string">"id"</span>: <span class="string">"000060C5A860D5F9"</span>,
+      <span class="string">"vendor"</span>: <span class="string">"enzd"</span>,
+      <span class="string">"seq"</span>: <span class="number">0</span>, //设备序号
+      <span class="string">"password"</span>: <span class="string">"172168"</span>,
+      <span class="string">"group_id"</span>: <span class="string">""</span>
+      <span class="string">"src"</span>: <span class="string">""</span>
+      <span class="string">"dst"</span>: <span class="string">""</span>
+    }
+  ]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "remove_cron_job"></a>
+    <strong>remove_cron_job (args)</strong>
+    </dt>
+    <dd>
+    删除定时任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = remove_cron_job(args)
+ args = {
+  job_id=<span class="string">"xyz34455"</span>      // 定时任务id
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_attr"></a>
+    <strong>set_attr (args)</strong>
+    </dt>
+    <dd>
+    设置设备属性信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ args={
+  <span class="string">"vendor"</span>:<span class="string">"haier"</span>,
+  <span class="string">"iot_id"</span>:<span class="string">"123456789"</span>,
+  <span class="string">"argument"</span>:{
+    <span class="string">"outletStatus"</span>:<span class="string">"1"</span>
+  }
+ }
+
+ app_data={
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_devinfo"></a>
+    <strong>set_devinfo (args)</strong>
+    </dt>
+    <dd>
+    设置名称等信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"iot_id"</span>:<span class="string">"123456789"</span>,
+  <span class="string">"name"</span>:<span class="string">"这是一个插座"</span>
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_top"></a>
+    <strong>set_top (args)</strong>
+    </dt>
+    <dd>
+    置顶某台IOT设备
+ 最后一次置顶的排在第一，上一次置顶的排在第二，依次类推
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {iot_id="ABC123"}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = set_top(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "update_cron_job"></a>
+    <strong>update_cron_job (args)</strong>
+    </dt>
+    <dd>
+    修改定时任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = update_cron_job(args)
+
+ args = {
+  job_id=<span class="string">"xyz34455"</span>,    // 定时任务id
+  disable=<span class="number">0</span>|<span class="number">1</span>,          // 是否禁用，<span class="number">1</span>表示禁用，默认不禁用
+  action=<span class="string">"set"</span>,         // 要执行的动作，默认set
+  arguments={
+    outletStatus=<span class="number">1</span>|<span class="number">0</span>,   // 比如海尔插座，<span class="number">1</span>为开，<span class="number">0</span>为关
+  },                    // 要执行的动作对应的参数
+  minute=<span class="number">0</span>|<span class="number">59</span>,          // 分
+  hour=<span class="number">0</span>|<span class="number">23</span>,            // 时
+  day=*|<span class="number">1</span>|<span class="number">31</span>,           // 日
+  month=*|<span class="number">1</span>|<span class="number">12</span>,         // 月
+  week=*|<span class="number">0</span>|<span class="number">6</span>,           // 周几
+  repeatflag=<span class="number">1</span>|<span class="number">0</span>,       // 是否重复执行，默认<span class="number">1</span>重复，<span class="number">0</span>不重复仅<span class="number">1</span>次
+ }</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -1,0 +1,954 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><strong>wan</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>wan</code></h1>
+<p>配置pppoe</p>
+<p></p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#down">down (args)</a></td>
+	<td class="summary">停止wan网络</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_config">get_config (args)</a></td>
+	<td class="summary">获取wan的配置
+ 包括pppoe帐号密码之类</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_dns">get_dns (args)</a></td>
+	<td class="summary">获取自定义dns</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_inet_stat">get_inet_stat (args)</a></td>
+	<td class="summary">获取网络状态</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_ppp_adv">get_ppp_adv (nil)</a></td>
+	<td class="summary">获取PPPoE高级设置， 包括keepalive超时设置，服务名service/服务器名ac</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_pppoe_status">get_pppoe_status (args)</a></td>
+	<td class="summary">获取pppoe拨号状态</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_status">get_status (args)</a></td>
+	<td class="summary">获取wan信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_support_mode">get_support_mode ()</a></td>
+	<td class="summary">获取支持的wan模式</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_wisp_status">get_wisp_status (args)</a></td>
+	<td class="summary">获取无线中继状态</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_24g_bridge">set_24g_bridge (args)</a></td>
+	<td class="summary">设置2.4G 中继信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_dhcp_way">set_dhcp_way (args)</a></td>
+	<td class="summary">设置dhcp上网</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_dns">set_dns (args)</a></td>
+	<td class="summary">设置自定义dns</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_mac">set_mac (args)</a></td>
+	<td class="summary">设置wan口mac</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_mtu">set_mtu (args)</a></td>
+	<td class="summary">设置wan的mtu</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_ppp_adv">set_ppp_adv (args)</a></td>
+	<td class="summary">设置PPPoE高级选项， 包括keepalive超时设置，服务名service/服务器名ac</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_pppoe_way">set_pppoe_way (args)</a></td>
+	<td class="summary">设置pppoe拨号上网</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_static_way">set_static_way (args)</a></td>
+	<td class="summary">设置静态ip上网</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#switch_mode">switch_mode (args)</a></td>
+	<td class="summary">切换wan口模式</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#up">up (args)</a></td>
+	<td class="summary">启动wan网络</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "down"></a>
+    <strong>down (args)</strong>
+    </dt>
+    <dd>
+    停止wan网络
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = down(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_config"></a>
+    <strong>get_config (args)</strong>
+    </dt>
+    <dd>
+    获取wan的配置
+ 包括pppoe帐号密码之类
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_config(args)
+
+ args = {
+ }
+
+ data = {
+    <span class="string">"wan_type"</span>:<span class="string">"dhcp"</span>,   // 当前上网方式。 pppoe 拨号，static 静态ip，wisp 无线中继
+    <span class="string">"username"</span>: <span class="string">"abc124"</span>,       // pppoe 帐号，如果是pppoe时才用做生效配置
+    <span class="string">"password"</span>: <span class="string">"test"</span>,         // pppoe 密码, pppoe时才用做生效配置
+    <span class="string">"ssid"</span>: <span class="string">"hiwifi"</span>,           // 中继的ssid，如果wan_type是wisp时才有
+    <span class="string">"key"</span>: <span class="string">"abc123344"</span>,         // 中继的密码，如果wan_type是wisp时才有
+    <span class="string">"ifname"</span>: <span class="string">"eth2.2"</span>,
+    <span class="string">"macaddr"</span>: <span class="string">"d4:cd:ef:12:34:59"</span>,   // wan口mac地址
+    <span class="string">"def_ifname"</span>: <span class="string">"eth2.2"</span>,
+    <span class="string">"up"</span>: <span class="string">"1"</span>,
+    <span class="string">"device"</span>: <span class="string">"eth2.2"</span>,
+    <span class="string">"proto"</span>: <span class="string">"dhcp"</span>,		// 生效的配置协议
+    <span class="string">"connect_time"</span>: <span class="string">"21195"</span>,
+    <span class="string">"mtu"</span>: <span class="string">"1490"</span>,              // 当前生效的mtu
+    <span class="string">"mtu_default"</span>: <span class="string">"1480"</span>,       // 建议默认mtu
+    <span class="string">"active_override_dns"</span>:<span class="number">0</span>,       // 为<span class="number">1</span>是表示激活了自定义dns
+    <span class="string">"dns"</span>:[<span class="string">"114.114.114.114"</span>,<span class="string">"114.114.115.115"</span>], // 生效的自定义dns
+    <span class="string">"switch_status_wan"</span>:<span class="string">"100full"</span>   // <span class="number">100</span>M全双工, <span class="number">10</span>half=<span class="number">10</span>M半双工, auto=自动选择
+    <span class="string">"ipaddr"</span> : <span class="string">"192.168.1.15"</span>    //静态IP配置时，生效的IP地址
+    <span class="string">"netmask"</span> : <span class="string">"255.255.255.0"</span>  //静态IP配置时，生效的子网掩码
+    <span class="string">"gateway"</span> : <span class="string">"192.168.1.1"</span>    //静态IP配置时，生效的网关
+    <span class="string">"peerdns"</span>:<span class="string">"0"</span>,  // 为<span class="number">0</span>时表示使用了自定义dns
+    <span class="string">"inactive_config"</span>:{  // 之前保存的配置
+      <span class="string">"pppoe"</span>:{
+        <span class="string">"username"</span>:<span class="string">"abc124"</span>,
+        <span class="string">"password"</span>:<span class="string">"test"</span>
+      },
+      <span class="string">"static"</span>:{
+        <span class="string">"ip"</span>:<span class="string">"1.2.3.4"</span>,
+        <span class="string">"gateway"</span>:<span class="string">"1.2.3.1"</span>,
+        <span class="string">"mask"</span>:<span class="string">"255.255.255.0"</span>,
+        <span class="string">"dns"</span>:[<span class="string">"8.8.8.8"</span>,<span class="string">"7.7.7.7"</span>]
+      },
+      <span class="string">"peerdns"</span>:<span class="string">"0"</span>,  // 为<span class="number">0</span>时表示使用了自定义dns
+      <span class="string">"override_dns"</span>:[<span class="string">"114.114.114.114"</span>,<span class="string">"114.114.115.115"</span>],
+      <span class="string">"wisp"</span>:{
+        <span class="string">"ssid"</span>:<span class="string">"HiWiFi"</span>,
+        <span class="string">"encryption"</span>:<span class="string">"mixed-psk"</span>,
+        <span class="string">"status"</span>:<span class="number">0</span>,
+        <span class="string">"bssid"</span>:<span class="string">"D4:EE:07:01:23:45"</span>,
+        <span class="string">"disabled"</span>:<span class="number">1</span>,
+        <span class="string">"key"</span>:<span class="string">"1234cvbn"</span>
+      }
+    }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_dns"></a>
+    <strong>get_dns (args)</strong>
+    </dt>
+    <dd>
+    获取自定义dns
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_dns(args)
+ data={
+        active_override_dns=<span class="number">1</span>|<span class="number">0</span>,
+        override_dns_list={<span class="string">"8.8.8.8"</span>,<span class="string">"114.114.114.114"</span>}
+      }
+ active_override_dns <span class="number">1</span>激活自定义dns，<span class="number">0</span>取消自定义dns
+ override_dns_list 自定义的dns列表</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_inet_stat"></a>
+    <strong>get_inet_stat (args)</strong>
+    </dt>
+    <dd>
+    获取网络状态
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_inet_stat(args)
+ data = {status = <span class="number">0</span>|<span class="number">1</span>}
+ <span class="number">1</span> 正常
+ <span class="number">0</span> 不正常</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_ppp_adv"></a>
+    <strong>get_ppp_adv (nil)</strong>
+    </dt>
+    <dd>
+    获取PPPoE高级设置， 包括keepalive超时设置，服务名service/服务器名ac
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">nil</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        #table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_ppp_adv()
+
+ data = {
+      lcp_interval = <span class="string">'10'</span>,
+      lcp_failure_threshold = <span class="string">'18'</span>,
+      lcp_failure_threshold_default = <span class="string">'18'</span>,
+      service = <span class="string">'your_service_name'</span>,
+      ac = <span class="string">'your_ac_name'</span>
+ }
+ </pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_pppoe_status"></a>
+    <strong>get_pppoe_status (args)</strong>
+    </dt>
+    <dd>
+    获取pppoe拨号状态
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+        返回值
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_pppoe_status(args)
+ data = {
+    status=<span class="number">0</span>|-<span class="number">1</span>|<span class="number">9999</span>,
+    remote_message=<span class="string">"E=691 auth error"</span>,
+    remote_err_code=<span class="string">"691"</span>,
+    remote_err_msg=<span class="string">"auth error"</span>,
+    special_dial=<span class="number">1</span>,
+    special_dial_num=<span class="number">4</span>,
+    special_dial_max=<span class="number">11</span>,
+    mac_clone=<span class="number">0</span>|<span class="number">1</span>,
+    mc_max=<span class="number">0</span>|<span class="number">3</span>,
+    mc_index=<span class="number">1</span>|<span class="number">2</span>,
+    mc_macaddr=<span class="string">"ab:cd:ef:12:34:56"</span>,
+    smart_pppoe={
+       smart=<span class="number">1</span>,
+       start_time=<span class="number">1438156945</span>,
+       step_start_time=<span class="number">1438156976</span>,
+       step_name=<span class="string">"100half"</span>,
+       step_map=[<span class="string">"normal"</span>,<span class="string">"100half"</span>,<span class="string">"10full"</span>,<span class="string">"10half"</span>,<span class="string">"normal"</span>]
+    }
+ }
+ status  <span class="number">0</span> 为正常  -<span class="number">1</span> 为连接中, 其他数字为不正常
+ remote_message 拨号信息，E=<span class="number">691</span>代表<span class="number">691</span>错误
+ remote_err_code 拨号错误码
+ remote_err_msg 拨号错误信息
+
+ smart_pppoe 智能拨号信息
+ step_name 正在进行哪哪种尝试
+ step_start_time 这种拨号尝试开始时间
+ start_time 智能拨号流程开始时间
+ step_map 依次尝试的拨号步骤
+
+ special_dial 是否特殊拨号
+ special_dial_num 特殊拨号到第几步
+ special_dial_max 特殊拨号总数量
+
+ mac_clone 是否mac克隆，<span class="number">1</span>克隆
+ mc_max 总共需要克隆几个MAC
+ mc_index 当前已经克隆到第几个MAC
+ mc_macaddr 当前正在使用的克隆mac</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_status"></a>
+    <strong>get_status (args)</strong>
+    </dt>
+    <dd>
+    获取wan信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+    </ul>
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ data={
+   wan_type=<span class="string">"dhcp"</span>,   // 或者是 pppoe 拨号，static 静态ip，wisp 无线中继
+   up=<span class="keyword">true</span>|<span class="keyword">false</span>,      // <span class="keyword">true</span>为wan口已启动
+   dev_link=<span class="keyword">true</span>|<span class="keyword">false</span>,  // <span class="keyword">true</span>为wan口插了网线
+   pending=<span class="keyword">true</span>|<span class="keyword">false</span>,   // <span class="keyword">true</span>为拨号中
+   uptime=<span class="number">120</span>,           // wan启动时间，单位秒
+   wan_ip=<span class="string">"202.102.188.1"</span>,     // wan口ip
+   wan_mac=<span class="string">"d4:ee:07:11:22:33"</span>,// wan口mac
+   wan_mask=<span class="string">"255.255.255.0"</span>,   // 子网掩码
+   ipv6_address=[              // ipv6
+     {<span class="string">"mask"</span>:<span class="number">64</span>,<span class="string">"address"</span>:<span class="string">"4006:e024:680:4cf8::1"</span>}
+   ],
+   dns=[<span class="string">"114.114.114.114"</span>, <span class="string">"8.8.8.8"</span>], // DNS
+   gateway=<span class="string">"192.168.10.254"</span>,   // 网关
+   inet_status=<span class="number">1</span>|<span class="number">0</span>,  // wan口是否联通（与上层连接正常，但不保证互联网畅通）
+   uptime=<span class="number">1112</span>,      // wan口启动时长，单位秒
+   duplex=<span class="string">"full"</span>,     // full全双工， half半双工
+   speed=<span class="string">"100M"</span>,      // 速率
+   switch_status_wan=<span class="string">"100full"</span>,   // <span class="number">100</span>M全双工, <span class="number">10</span>half=<span class="number">10</span>M半双工, auto=自动选择
+   inactive={                     // 未生效的属性
+     <span class="string">"dns-server"</span>:[<span class="string">"192.168.5.7"</span>,<span class="string">"192.168.5.17"</span>],    // 默认获得的dns，但因为自定义了dns，未生效
+     <span class="string">"route"</span>:{},
+     <span class="string">"dns-search"</span>:[<span class="string">"hiwifi-inc.net"</span>],
+     <span class="string">"ipv4-address"</span>:{},
+     <span class="string">"ipv6-address"</span>:{}
+   }
+ }
+
+ 具体配置信息和拨号错误信息</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_support_mode"></a>
+    <strong>get_support_mode ()</strong>
+    </dt>
+    <dd>
+    获取支持的wan模式
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ app_data={
+  support_modes=[<span class="string">"auto"</span>,<span class="string">"1000full"</span>,<span class="string">"100full"</span>,<span class="string">"10half"</span>]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_wisp_status"></a>
+    <strong>get_wisp_status (args)</strong>
+    </dt>
+    <dd>
+    获取无线中继状态
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {period}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ args
+ {
+ <span class="string">"period"</span>:<span class="number">86400</span>       // 取多少秒内的数据（默认<span class="number">86400</span>秒）
+ }
+
+ app_data
+ {
+ <span class="string">"down_time_points"</span>:[       // 网络断开时间点，时间点越多说明越不稳定
+  <span class="number">1438309144</span>,
+  <span class="number">1438309257</span>,
+  <span class="number">1438309599</span>
+ ]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_24g_bridge"></a>
+    <strong>set_24g_bridge (args)</strong>
+    </dt>
+    <dd>
+    设置2.4G 中继信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+    </ul>
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = set_24g_bridge(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_dhcp_way"></a>
+    <strong>set_dhcp_way (args)</strong>
+    </dt>
+    <dd>
+    设置dhcp上网
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args=
+ {
+  switch_status_wan=<span class="string">"auto"</span>,
+  peerdns=<span class="string">"0"</span>,
+  override_dns=<span class="string">"114.114.114.114"</span>,
+  override_dns2=<span class="string">"114.114.115.115"</span>
+ }
+
+ switch_status_wan  WAN口模式, <span class="number">10</span>half=<span class="number">10</span>M半双工, <span class="number">100</span>full=<span class="number">100</span>M全双工，auto=自动
+ peerdns            为<span class="string">"0"</span>时表示激活自定义dns，此时设置的override_dns和override_dns2才生效
+ override_dns       自定义的dns <span class="number">1</span>（需要peerdns为<span class="string">"0"</span>才生效）
+ override_dns2      自定义的dns <span class="number">2</span>（需要peerdns为<span class="string">"0"</span>才生效）
+ warn: hwf-at <span class="number">5</span> restart wan</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_dns"></a>
+    <strong>set_dns (args)</strong>
+    </dt>
+    <dd>
+    设置自定义dns
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_dns(args)
+ args={
+    active_override_dns=<span class="number">1</span>|<span class="number">0</span>,    // <span class="number">1</span>激活自定义dns，<span class="number">0</span>取消自定义dns
+    override_dns_list={<span class="string">"8.8.8.8"</span>,<span class="string">"114.114.114.114"</span>} // 自定义的dns列表
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_mac"></a>
+    <strong>set_mac (args)</strong>
+    </dt>
+    <dd>
+    设置wan口mac
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_mac(args)
+
+ args = {
+   use_default=<span class="number">0</span>,            // 为<span class="number">1</span>表示使用默认mac
+   mac=<span class="string">"d4:cd:ef:12:34:58"</span>   // 自定义mac，当use_default为<span class="number">1</span>时，忽略mac
+ }
+
+ data = {
+   mac=<span class="string">"d4:cd:ef:12:34:58"</span>   // 生效的wan口mac
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_mtu"></a>
+    <strong>set_mtu (args)</strong>
+    </dt>
+    <dd>
+    设置wan的mtu
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_mtu(args)
+
+ args = {
+  mtu=<span class="number">1488</span>
+ }
+
+ pppoe  <span class="number">576</span>~<span class="number">1492</span>
+ dhcp  <span class="number">576</span>~<span class="number">1500</span>
+ static  <span class="number">576</span>~<span class="number">1500</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_ppp_adv"></a>
+    <strong>set_ppp_adv (args)</strong>
+    </dt>
+    <dd>
+    设置PPPoE高级选项， 包括keepalive超时设置，服务名service/服务器名ac
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        #table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_ppp_adv(args)
+
+ args = {
+      lcp_failure_threshold = <span class="string">'18'</span>
+      service = <span class="string">'your_service_name'</span>,
+      ac = <span class="string">'your_ac_name'</span>
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_pppoe_way"></a>
+    <strong>set_pppoe_way (args)</strong>
+    </dt>
+    <dd>
+    设置pppoe拨号上网
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args=
+ {
+  pppoe_name=<span class="string">"abc123"</span>,
+  pppoe_passwd=<span class="string">"xx234"</span>,
+  special_dial=<span class="number">0</span>|<span class="number">1</span>,
+  mac_clone=<span class="number">0</span>|<span class="number">1</span>,
+  switch_status_wan=<span class="string">"auto"</span>,
+  peerdns=<span class="string">"0"</span>,
+  override_dns=<span class="string">"114.114.114.114"</span>,
+  override_dns2=<span class="string">"114.114.115.115"</span>
+ }
+
+ pppoe_name 宽带帐号
+ pppoe_passwd 宽带密码
+ special_dial 是否特殊拨号 默认<span class="number">0</span>
+ mac_clone 是否mac克隆拨号 默认<span class="number">0</span>不克隆
+ switch_status_wan  WAN口模式, <span class="number">10</span>half=<span class="number">10</span>M半双工, <span class="number">100</span>full=<span class="number">100</span>M全双工，auto=自动
+ peerdns            为<span class="string">"0"</span>时表示激活自定义dns，此时设置的override_dns和override_dns2才生效
+ override_dns       自定义的dns <span class="number">1</span>（需要peerdns为<span class="string">"0"</span>才生效）
+ override_dns2      自定义的dns <span class="number">2</span>（需要peerdns为<span class="string">"0"</span>才生效）
+ warn: hwf-at <span class="number">5</span> restart wan</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_static_way"></a>
+    <strong>set_static_way (args)</strong>
+    </dt>
+    <dd>
+    设置静态ip上网
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+ static_ip=<span class="string">"192.168.1.123"</span>,
+ static_mask=<span class="string">"255.255.255.0"</span>,
+ static_gw=<span class="string">"192.168.1.1"</span>,
+ static_dns=<span class="string">"8.8.8.8"</span>,
+ static_dns2=<span class="string">"114.114.114.114"</span>,
+ switch_status_wan=<span class="string">"auto"</span>
+ }
+
+ static_ip 静态ip
+ static_mask 子网掩码
+ static_gw 网关
+ static_dns 自定义dns <span class="number">1</span>
+ static_dns2 自定义dns <span class="number">2</span>
+ switch_status_wan  WAN口模式, <span class="number">10</span>half=<span class="number">10</span>M半双工, <span class="number">100</span>full=<span class="number">100</span>M全双工，auto=自动
+ warn: hwf-at <span class="number">5</span> restart wan</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "switch_mode"></a>
+    <strong>switch_mode (args)</strong>
+    </dt>
+    <dd>
+    切换wan口模式
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = switch_mode(args)
+
+ args = {
+   mode=<span class="string">"10half"</span>  // <span class="number">10</span>full <span class="number">10</span>M全双工，<span class="number">100</span>half <span class="number">100</span>M半双工，<span class="number">100</span>full <span class="number">100</span>M全双工，auto 自动
+ }
+ </pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "up"></a>
+    <strong>up (args)</strong>
+    </dt>
+    <dd>
+    启动wan网络
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = up(args)</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

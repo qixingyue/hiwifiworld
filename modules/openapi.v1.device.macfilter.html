@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><strong>openapi.v1.device.macfilter</strong></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.device.macfilter</code></h1>
+<p>(no description)</p>
+<p></p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#add_list">add_list (args)</a></td>
+	<td class="summary">添加黑/白名单列表</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#allow">allow (args)</a></td>
+	<td class="summary">允许联网</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#check_status">check_status (args)</a></td>
+	<td class="summary">检查设备是否允许联网</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#clear_list">clear_list (args)</a></td>
+	<td class="summary">清空黑/白名单列表</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#close">close (args)</a></td>
+	<td class="summary">关闭黑/白名单列表</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#del_list">del_list (args)</a></td>
+	<td class="summary">删除黑/白名单列表</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#forbid">forbid (args)</a></td>
+	<td class="summary">禁止联网</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_list">get_list (args)</a></td>
+	<td class="summary">获取黑/白名单列表</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_status">get_status (args)</a></td>
+	<td class="summary">获取当前黑/白名单状态</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#open">open (args)</a></td>
+	<td class="summary">开启黑/白名单列表</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "add_list"></a>
+    <strong>add_list (args)</strong>
+    </dt>
+    <dd>
+    添加黑/白名单列表
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"macfilter"</span>:<span class="string">"deny"</span>,
+  <span class="string">"maclist"</span>:
+    [
+        <span class="string">"CC:78:5F:11:22:33"</span>,
+        <span class="string">"28:D9:8A:84:8E:F3"</span>
+    ]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "allow"></a>
+    <strong>allow (args)</strong>
+    </dt>
+    <dd>
+    允许联网
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ args = {
+  maclist=[<span class="string">"00:21:cc:4a:d8:11"</span>,<span class="string">"11:21:cc:4a:d8:22"</span>]  // 允许联网的设备mac列表
+ }
+
+ app_data = {
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "check_status"></a>
+    <strong>check_status (args)</strong>
+    </dt>
+    <dd>
+    检查设备是否允许联网
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ args = {
+  mac=<span class="string">"00:21:cc:4a:d8:11"</span> // 检查的mac列表
+ }
+
+ app_data = {
+   status=<span class="number">1</span>           // <span class="number">1</span>为允许，<span class="number">0</span>为禁止
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "clear_list"></a>
+    <strong>clear_list (args)</strong>
+    </dt>
+    <dd>
+    清空黑/白名单列表
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"macfilter"</span>:<span class="string">"allow"</span>/<span class="string">"deny"</span>
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "close"></a>
+    <strong>close (args)</strong>
+    </dt>
+    <dd>
+    关闭黑/白名单列表
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"macfilter"</span>:<span class="string">"allow"</span>/<span class="string">"deny"</span>
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "del_list"></a>
+    <strong>del_list (args)</strong>
+    </dt>
+    <dd>
+    删除黑/白名单列表
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"macfilter"</span>:<span class="string">"allow"</span>,
+  <span class="string">"maclist"</span>:
+    [
+        <span class="string">"CC:78:5F:11:22:33"</span>,
+        <span class="string">"28:D9:8A:84:8E:F3"</span>
+    ]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "forbid"></a>
+    <strong>forbid (args)</strong>
+    </dt>
+    <dd>
+    禁止联网
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+            <span class="types"><span class="type">tab</span></span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ args = {
+  maclist=[<span class="string">"00:21:cc:4a:d8:11"</span>,<span class="string">"11:21:cc:4a:d8:22"</span>]  //禁止的设备mac列表
+ }
+
+ app_data = {
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_list"></a>
+    <strong>get_list (args)</strong>
+    </dt>
+    <dd>
+    获取黑/白名单列表
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"macfilter"</span>:<span class="string">"allow"</span>/<span class="string">"deny"</span>
+ }
+ data={
+   <span class="string">"maclist"</span>:
+		[
+			<span class="string">"CC:78:5F:11:22:33"</span>,
+			<span class="string">"28:D9:8A:84:8E:F3"</span>
+		]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_status"></a>
+    <strong>get_status (args)</strong>
+    </dt>
+    <dd>
+    获取当前黑/白名单状态
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+ }
+ data={
+		<span class="string">"macfilter"</span>:<span class="string">"deny"</span>/<span class="string">"allow"</span>
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "open"></a>
+    <strong>open (args)</strong>
+    </dt>
+    <dd>
+    开启黑/白名单列表
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {app_code, app_msg, app_data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"macfilter"</span>:<span class="string">"allow"</span>/<span class="string">"deny"</span>
+ }</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

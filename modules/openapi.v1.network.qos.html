@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><strong>openapi.v1.network.qos</strong></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><a href="../modules/openapi.v1.wireless.html">openapi.v1.wireless</a></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.network.qos</code></h1>
+<p>Qos v1.0</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2016 HiWiFi Elite Co., Ltd.</li>
+        <li><strong>Author</strong>: xiangwei.tian <xiangwei.tian@hiwfii.tw></li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#del_guaran_dev">del_guaran_dev (args)</a></td>
+	<td class="summary">取消终端保证带宽</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#del_speedup">del_speedup (args)</a></td>
+	<td class="summary">取消终端的一键加速</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_guaran_dev">get_guaran_dev ()</a></td>
+	<td class="summary">获取保证带宽终端信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_speedup">get_speedup ()</a></td>
+	<td class="summary">获取一键加速的终端配置</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_total">get_total ()</a></td>
+	<td class="summary">获取Qos总配置</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#list">list (args)</a></td>
+	<td class="summary">获取终端qos配置</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set">set (args)</a></td>
+	<td class="summary">配置终端qos</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_guest">set_guest (args)</a></td>
+	<td class="summary">设置访客网络限速</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#start">start (args)</a></td>
+	<td class="summary">启动 qos</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#stop">stop ()</a></td>
+	<td class="summary">停止 qos</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "del_guaran_dev"></a>
+    <strong>del_guaran_dev (args)</strong>
+    </dt>
+    <dd>
+    取消终端保证带宽
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+   <span class="string">"mac"</span>:<span class="string">"38:48:4C:9D:8B:F9"</span>   //终端mac
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "del_speedup"></a>
+    <strong>del_speedup (args)</strong>
+    </dt>
+    <dd>
+    取消终端的一键加速
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {mac}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+   <span class="string">"mac"</span>:<span class="string">"38:48:4C:9D:8B:F9"</span> //终端mac
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_guaran_dev"></a>
+    <strong>get_guaran_dev ()</strong>
+    </dt>
+    <dd>
+    获取保证带宽终端信息
+
+
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ data={
+   <span class="string">"mac"</span>:<span class="string">"38:48:4C:9D:8B:F9"</span>,   //终端mac
+   <span class="string">"down"</span>:<span class="number">100</span>,                  //上行保证带宽值 单位:bps
+   <span class="string">"up"</span>:<span class="number">100</span>                     //下行保证带宽值 单位:bps
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_speedup"></a>
+    <strong>get_speedup ()</strong>
+    </dt>
+    <dd>
+    获取一键加速的终端配置
+
+
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ data={
+  <span class="string">"mac"</span>: <span class="string">"D4:EE:07:18:CF:33"</span>,   // 终端mac
+  <span class="string">"time_running"</span>:<span class="number">50</span>                //已经加速时间 单位:秒
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_total"></a>
+    <strong>get_total ()</strong>
+    </dt>
+    <dd>
+    获取Qos总配置
+
+
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ data = {
+    <span class="string">"mode"</span>:<span class="number">1</span>|<span class="number">2</span>|<span class="number">3</span>          //Qos工作模式 <span class="number">1</span>:智能 <span class="number">2</span>:优先级 <span class="number">3</span>:限速
+    <span class="string">"total_up"</span>:<span class="number">1000</span>    //上行总带宽 单位:bps
+    <span class="string">"total_down"</span>:<span class="number">2000</span>  //下行总带宽 单位:bps
+    <span class="string">"active"</span> <span class="keyword">true</span>|<span class="keyword">false</span>   //Qos是否开启标识
+    <span class="string">"total_devices"</span>:<span class="number">23</span>    //Qos配置的总设备数
+    <span class="string">"used_devices"</span>:<span class="number">12</span>     //Qos配置的活动设备数
+    <span class="string">"guest_up"</span>:<span class="number">50</span>         //访客网络上行限速值 单位:bps
+    <span class="string">"guest_down"</span>:<span class="number">60</span>       //访客网络下行限速值 单位:bps
+    <span class="string">"ip_range"</span>:[          //Qos例外ip列表
+    <span class="string">"192.168.1.0/24"</span>,
+    <span class="string">"192.168.3.10"</span>,
+    <span class="string">"192.168.5.10-192.168.5.20"</span>
+    ]
+  }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "list"></a>
+    <strong>list (args)</strong>
+    </dt>
+    <dd>
+    获取终端qos配置
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"mac"</span>: <span class="string">"D4:EE:07:18:CF:33"</span>,   // 终端mac,获取该终端的qos配置(无参数则获取所有终端的配置)
+ }
+
+ data={
+   <span class="string">"mac"</span>: <span class="string">"D4:EE:07:18:CF:33"</span>,   // 终端mac
+   <span class="string">"ip"</span>: <span class="string">"192.168.199.100"</span>,   // 终端ip
+   <span class="string">"mode"</span>:<span class="number">1</span>|<span class="number">2</span>|<span class="number">3</span>                  //终端工作模式
+   <span class="string">"prio"</span>:<span class="number">1</span>|<span class="number">2</span>|<span class="number">3</span>                  //终端优先级
+   <span class="string">"up"</span>: <span class="number">50</span>,                     // 上行限速值 单位:bps
+   <span class="string">"down"</span>: <span class="number">100</span>,                  // 下行限速值 单位:bps
+   <span class="string">"update_time"</span>:<span class="number">1446107665</span>,     // 最后设置日期
+   <span class="string">"online"</span>:<span class="number">1</span>|<span class="number">0</span>,     // 终端在线状态  <span class="number">1</span>:在线 <span class="number">0</span>:不在线
+   <span class="string">"type"</span>:<span class="string">"station|ap|iot|guest"</span>,     //终端类型
+   <span class="string">"working"</span>:<span class="number">1</span>|<span class="number">0</span>            //终端Qos是否运行  <span class="number">1</span>:运行 <span class="number">0</span>:未运行
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set"></a>
+    <strong>set (args)</strong>
+    </dt>
+    <dd>
+    配置终端qos
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"mac"</span>:<span class="string">"38:48:4C:9D:8B:F9"</span>  //终端mac
+  <span class="string">"mode"</span>:<span class="string">"1|2|3|4|5"</span>,        //工作模式,<span class="number">1</span>:智能;<span class="number">2</span>:优先级;<span class="number">3</span>:限速;<span class="number">4</span>:一键加速;<span class="number">5</span>：保证带宽模式
+  <span class="string">"prio"</span>:<span class="number">1</span>|<span class="number">2</span>|<span class="number">3</span>               //终端优先级
+  <span class="string">"up"</span>: <span class="number">50</span>,                  //上行限速值 单位:bps
+  <span class="string">"down"</span>: <span class="number">100</span>,               //下行限速值 单位:bps
+  <span class="string">"stop_timeout"</span>:<span class="number">100</span>         //终端限速超时时间 单位：分钟
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_guest"></a>
+    <strong>set_guest (args)</strong>
+    </dt>
+    <dd>
+    设置访客网络限速
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {guest_up,guest_down}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+   <span class="string">"guest_up"</span>:<span class="number">200</span>,    //上行限速值  单位:bps
+   <span class="string">"guest_down"</span>:<span class="number">200</span>   //下行限速值  单位:bps
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "start"></a>
+    <strong>start (args)</strong>
+    </dt>
+    <dd>
+    启动 qos
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  <span class="string">"mode"</span>:<span class="number">1</span>|<span class="number">2</span>|<span class="number">3</span>,                // Qos工作模式 <span class="number">1</span>:智能 <span class="number">2</span>:优先级 <span class="number">3</span>:限速
+  <span class="string">"total_up"</span>:<span class="number">1000000</span>,          //上行总带宽 单位:bps
+  <span class="string">"total_down"</span>:<span class="number">1000000</span>,        //下行总带宽 单位:bps
+  <span class="string">"ip_range"</span>:[                 //Qos例外ip列表
+    <span class="string">"192.168.1.0/24"</span>,
+    <span class="string">"192.168.3.10"</span>,
+    <span class="string">"192.168.5.10-192.168.5.20"</span>
+  ]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "stop"></a>
+    <strong>stop ()</strong>
+    </dt>
+    <dd>
+    停止 qos
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

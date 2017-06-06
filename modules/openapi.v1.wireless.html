@@ -1,0 +1,1799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>HiWiFi openapi documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>HiWiFi openapi</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Fields">Fields</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/openapi.v1.device.html">openapi.v1.device</a></li>
+  <li><a href="../modules/openapi.v1.device.ap.html">openapi.v1.device.ap</a></li>
+  <li><a href="../modules/openapi.v1.device.apmgr.html">openapi.v1.device.apmgr</a></li>
+  <li><a href="../modules/openapi.v1.device.iot.html">openapi.v1.device.iot</a></li>
+  <li><a href="../modules/openapi.v1.device.macfilter.html">openapi.v1.device.macfilter</a></li>
+  <li><a href="../modules/openapi.v1.device.netshield.html">openapi.v1.device.netshield</a></li>
+  <li><a href="../modules/openapi.v1.device.notify.html">openapi.v1.device.notify</a></li>
+  <li><a href="../modules/openapi.v1.device.sta.html">openapi.v1.device.sta</a></li>
+  <li><a href="../modules/openapi.v1.device.star.html">openapi.v1.device.star</a></li>
+  <li><a href="../modules/openapi.v1.homecloud.cache.html">openapi.v1.homecloud.cache</a></li>
+  <li><a href="../modules/openapi.v1.network.audit.html">openapi.v1.network.audit</a></li>
+  <li><a href="../modules/openapi.v1.network.dpi.html">openapi.v1.network.dpi</a></li>
+  <li><a href="../modules/openapi.v1.network.firewall.html">openapi.v1.network.firewall</a></li>
+  <li><a href="../modules/openapi.v1.network.hnat.html">openapi.v1.network.hnat</a></li>
+  <li><a href="../modules/openapi.v1.network.ipstat.html">openapi.v1.network.ipstat</a></li>
+  <li><a href="../modules/openapi.v1.network.lan.html">openapi.v1.network.lan</a></li>
+  <li><a href="../modules/openapi.v1.network.procstat.html">openapi.v1.network.procstat</a></li>
+  <li><a href="../modules/openapi.v1.network.qos.html">openapi.v1.network.qos</a></li>
+  <li><a href="../modules/openapi.v1.network.route.html">openapi.v1.network.route</a></li>
+  <li><a href="../modules/openapi.v1.network.speedtest.html">openapi.v1.network.speedtest</a></li>
+  <li><a href="../modules/openapi.v1.network.tester.html">openapi.v1.network.tester</a></li>
+  <li><a href="../modules/openapi.v1.network.testsuite.html">openapi.v1.network.testsuite</a></li>
+  <li><a href="../modules/openapi.v1.network.upnp.html">openapi.v1.network.upnp</a></li>
+  <li><a href="../modules/openapi.v1.service.fsck.html">openapi.v1.service.fsck</a></li>
+  <li><a href="../modules/openapi.v1.service.guide.html">openapi.v1.service.guide</a></li>
+  <li><a href="../modules/openapi.v1.service.plums.html">openapi.v1.service.plums</a></li>
+  <li><a href="../modules/openapi.v1.service.sd_backup.html">openapi.v1.service.sd_backup</a></li>
+  <li><a href="../modules/openapi.v1.service.storaged.html">openapi.v1.service.storaged</a></li>
+  <li><a href="../modules/openapi.v1.service.ukbackup.html">openapi.v1.service.ukbackup</a></li>
+  <li><a href="../modules/openapi.v1.system.html">openapi.v1.system</a></li>
+  <li><a href="../modules/openapi.v1.system.board.html">openapi.v1.system.board</a></li>
+  <li><a href="../modules/openapi.v1.system.date.html">openapi.v1.system.date</a></li>
+  <li><a href="../modules/openapi.v1.system.diagnose.html">openapi.v1.system.diagnose</a></li>
+  <li><a href="../modules/openapi.v1.system.led.html">openapi.v1.system.led</a></li>
+  <li><a href="../modules/openapi.v1.system.operation_mode.html">openapi.v1.system.operation_mode</a></li>
+  <li><a href="../modules/openapi.v1.system.remote_debug.html">openapi.v1.system.remote_debug</a></li>
+  <li><a href="../modules/openapi.v1.system.upgrade.html">openapi.v1.system.upgrade</a></li>
+  <li><a href="../modules/openapi.v1.system.usb.html">openapi.v1.system.usb</a></li>
+  <li><a href="../modules/openapi.v1.wan.office_openvpn.html">openapi.v1.wan.office_openvpn</a></li>
+  <li><a href="../modules/openapi.v1.wan.pppoe_sniffer.html">openapi.v1.wan.pppoe_sniffer</a></li>
+  <li><a href="../modules/openapi.v1.wan.vpn.html">openapi.v1.wan.vpn</a></li>
+  <li><strong>openapi.v1.wireless</strong></li>
+  <li><a href="../modules/openapi.v1.wireless.guest.html">openapi.v1.wireless.guest</a></li>
+  <li><a href="../modules/wan.html">wan</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>openapi.v1.wireless</code></h1>
+<p>无线管理 v1.0</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2016 HiWiFi Co., Ltd.</li>
+        <li><strong>Author</strong>: chaogang.liu <chaogang.liu@hiwifi.tw></li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#del_wisp_history">del_wisp_history (args)</a></td>
+	<td class="summary">删除中继历史</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#down">down (args)</a></td>
+	<td class="summary">down设备</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get">get (args)</a></td>
+	<td class="summary">获取本地设备的wireless信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_24g_sleep">get_24g_sleep (args)</a></td>
+	<td class="summary">获取2.4G健康定时</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_5g_sleep">get_5g_sleep (args)</a></td>
+	<td class="summary">获取5G健康定时</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_aplist">get_aplist (args)</a></td>
+	<td class="summary">获取aplist(周边的无线AP)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_channel_rank">get_channel_rank (args)</a></td>
+	<td class="summary">获取无线信道 channel rank 状况</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_config">get_config (args)</a></td>
+	<td class="summary">获取无线接口任意配置信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_device_info">get_device_info (args)</a></td>
+	<td class="summary">获取无线device(radio0, radio1)下所有配置</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_hidden">get_hidden (args)</a></td>
+	<td class="summary">获取无线接口是否隐藏SSID</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_iface_info">get_iface_info (args)</a></td>
+	<td class="summary">获取某iface接口WiFi信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_last_wps_status">get_last_wps_status (args)</a></td>
+	<td class="summary">获取最后一次wps配对信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_probelist">get_probelist (args)</a></td>
+	<td class="summary">获取指定接口的周围无线设备的MAC地址列表</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_quality">get_quality (args)</a></td>
+	<td class="summary">获取当前无线信道干扰情况</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_stalist">get_stalist (args)</a></td>
+	<td class="summary">获取已连接的无线设备列表</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_txpwr_list">get_txpwr_list (args)</a></td>
+	<td class="summary">获取支持的信号模式</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_wisp_history">get_wisp_history (args)</a></td>
+	<td class="summary">获取中继历史</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#kick">kick (args)</a></td>
+	<td class="summary">踢掉接口下的某个设备并禁止其加入一次</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#merge_wifi">merge_wifi (args)</a></td>
+	<td class="summary">合并2.4G和5G</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#reload_24g_sleep">reload_24g_sleep (args)</a></td>
+	<td class="summary">重新配置2.4G定时任务</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#reload_5g_sleep">reload_5g_sleep (args)</a></td>
+	<td class="summary">重新配置5G定时任务</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#reload_macfilter">reload_macfilter (args)</a></td>
+	<td class="summary">重新加载无线MAC地址过滤规则</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set">set (args)</a></td>
+	<td class="summary">设置本地设备的wireless信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_24g_sleep">set_24g_sleep (args)</a></td>
+	<td class="summary">设置2.4G健康定时</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_5g_sleep">set_5g_sleep (args)</a></td>
+	<td class="summary">设置5G健康定时</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_channel">set_channel (args)</a></td>
+	<td class="summary">设置 wifi 信道</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_guest_info">set_guest_info (args)</a></td>
+	<td class="summary">设置所有guest接口WiFi信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_hidden">set_hidden (args)</a></td>
+	<td class="summary">设置无线接口隐藏SSID</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_htbw">set_htbw (args)</a></td>
+	<td class="summary">设置频宽 High Throughput</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_iface_info">set_iface_info (args)</a></td>
+	<td class="summary">设置某iface接口WiFi信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_isolate">set_isolate (args)</a></td>
+	<td class="summary">设置无线隔离状态</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_lowrssi">set_lowrssi (args)</a></td>
+	<td class="summary">设置自动踢掉的信号强度阈值</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_master_info">set_master_info (args)</a></td>
+	<td class="summary">设置所有master接口WiFi信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_master_status">set_master_status (args)</a></td>
+	<td class="summary">所有带master无线接口开关</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_txpwr">set_txpwr (args)</a></td>
+	<td class="summary">设置 wifi 信号强度</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_wisp">set_wisp (args)</a></td>
+	<td class="summary">设置中继信息</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#smart">smart (args)</a></td>
+	<td class="summary">smart config快连接入</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#split_wifi">split_wifi (args)</a></td>
+	<td class="summary">拆分2.4G和5G</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#start">start (args)</a></td>
+	<td class="summary">start无线接口</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#stop">stop (args)</a></td>
+	<td class="summary">stop无线接口</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#up">up (args)</a></td>
+	<td class="summary">up设备</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#validate_iface_info">validate_iface_info (args)</a></td>
+	<td class="summary">检查某iface接口WiFi参数是否正确</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#wps_start">wps_start (args)</a></td>
+	<td class="summary">开启wps</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#wps_stop">wps_stop (args)</a></td>
+	<td class="summary">关闭wps</td>
+	</tr>
+</table>
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#args">args</a></td>
+	<td class="summary">获取 wifi 信号强度</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "del_wisp_history"></a>
+    <strong>del_wisp_history (args)</strong>
+    </dt>
+    <dd>
+    删除中继历史
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = del_wisp_history(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "down"></a>
+    <strong>down (args)</strong>
+    </dt>
+    <dd>
+    down设备
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {device}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ 临时关闭指定频段的所有无线接口，不更改无线配置。应用场景举例：定时关闭无线可调用该接口
+
+ args={
+  device=<span class="string">"radio0"</span> // radio0为<span class="number">2.4</span>G，radio1为<span class="number">5</span>G
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get"></a>
+    <strong>get (args)</strong>
+    </dt>
+    <dd>
+    获取本地设备的wireless信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname,command}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  ifname=<span class="string">"master"</span>,   // master/masterac/guest/guestac/slave/slaveac
+  command=<span class="string">"stalist"</span>,   // stalist/aplist
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_24g_sleep"></a>
+    <strong>get_24g_sleep (args)</strong>
+    </dt>
+    <dd>
+    获取2.4G健康定时
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_24g_sleep(args)
+ data={
+   status=<span class="number">1</span>,
+   down_hour=<span class="number">23</span>,
+   down_min=<span class="number">0</span>,
+   up_hour=<span class="number">9</span>,
+   up_min=<span class="number">15</span>,
+   weekday_active=<span class="number">0</span>|<span class="number">1</span>
+ }
+ weekday_active 是否仅工作日生效，<span class="number">1</span>为是</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_5g_sleep"></a>
+    <strong>get_5g_sleep (args)</strong>
+    </dt>
+    <dd>
+    获取5G健康定时
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_5g_sleep(args)
+
+ data={
+   status=<span class="number">1</span>,
+   down_hour=<span class="number">23</span>,
+   down_min=<span class="number">0</span>,
+   up_hour=<span class="number">9</span>,
+   up_min=<span class="number">15</span>,
+   weekday_active=<span class="number">0</span>|<span class="number">1</span>
+ }
+ weekday_active 是否仅工作日生效，<span class="number">1</span>为是</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_aplist"></a>
+    <strong>get_aplist (args)</strong>
+    </dt>
+    <dd>
+    获取aplist(周边的无线AP)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname="master"|"masterac"}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_aplist(args)
+ args = {
+  ifname=<span class="string">"master"</span>|<span class="string">"masterac"</span>,
+  force_scan=<span class="number">0</span>                 // <span class="number">1</span>为强制执行扫描，扫描后不要立即获取结果。默认使用上次的结果
+ }
+
+ data = {
+  last_scan_time=<span class="number">1447677009</span>,
+  active_new_scan=<span class="number">0</span>,
+  aplist={
+    {ssid=<span class="string">"TP-LINK_1768"</span>,
+     channel=<span class="number">6</span>,
+     bssid=<span class="string">"D8:15:0D:3B:17:68"</span>,
+     encryption=<span class="string">"mixed-psk"</span>,
+     rssi=<span class="number">100</span>,
+     cwm=<span class="string">"HT40+"</span>
+     },
+    {ssid=<span class="string">"Black-J1-KK"</span>,
+     channel=<span class="number">6</span>,
+     bssid=<span class="string">"D6:EE:07:01:C2:1A"</span>,
+     encryption=<span class="string">"mixed-psk"</span>,
+     rssi=<span class="number">15</span>,
+     cwm=<span class="string">"HT20"</span>
+     }
+  }}
+
+  master <span class="number">2.4</span>G
+  masterac <span class="number">5</span>G
+  默认获取周边的<span class="number">2.4</span>G信号</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_channel_rank"></a>
+    <strong>get_channel_rank (args)</strong>
+    </dt>
+    <dd>
+    获取无线信道 channel rank 状况
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {device="radio0"|"radio1"}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Table {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ rank的值越大说明信道越拥挤
+
+ device=<span class="string">"radio0"</span> <span class="number">2.4</span>G （默认）
+ device=<span class="string">"radio1"</span> <span class="number">5</span>G
+ <span class="number">2.4</span> G 有<span class="number">13</span>个可选信道，数组的<span class="number">13</span>个数字分别代表<span class="number">1</span>-<span class="number">13</span>信道的质量
+ <span class="number">5</span>G 有<span class="number">8</span>个可选信道，数组的<span class="number">8</span>个数字，分别代表<span class="number">36</span>,<span class="number">40</span>,<span class="number">44</span>,<span class="number">48</span>,<span class="number">149</span>,<span class="number">153</span>,<span class="number">157</span>,<span class="number">161</span>信道的质量
+
+    <span class="string">"data"</span>: {
+        <span class="string">"rank"</span>: [
+            <span class="number">0.84279377490414</span>,
+            <span class="number">1</span>,
+            <span class="number">0.87858055785279</span>,
+            <span class="number">0.8691075858958</span>,
+            <span class="number">0.85948424930456</span>,
+            <span class="number">0.88873017066386</span>,
+            <span class="number">0.64461318697842</span>,
+            <span class="number">0.46004059845124</span>,
+            <span class="number">0.48665513871138</span>,
+            <span class="number">0.69814299676716</span>,
+            <span class="number">0.75693556875423</span>,
+            <span class="number">0.51199157958048</span>,
+            <span class="number">0.23344109465454</span>
+        ]
+    }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_config"></a>
+    <strong>get_config (args)</strong>
+    </dt>
+    <dd>
+    获取无线接口任意配置信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args = {
+   ifname = <span class="string">"master"</span>   // master/masterac/guest/guestac/slave/slaveac
+   option=<span class="string">"ssid"</span>, // ssid/encryption/key/disabled等等
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_device_info"></a>
+    <strong>get_device_info (args)</strong>
+    </dt>
+    <dd>
+    获取无线device(radio0, radio1)下所有配置
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+
+ data={
+  <span class="string">"wifi_device"</span>:{
+    <span class="string">"radio0"</span>:{            // <span class="number">2.4</span>G
+      <span class="string">"txpwr"</span>:<span class="string">"min"</span>,      // min 环保(<span class="number">1</span>级),max 常规（<span class="number">2</span>级）,<span class="number">140</span> 穿墙（<span class="number">3</span>级）
+      <span class="string">"htbw"</span>:<span class="string">"ht40"</span>,      // 频宽（ht20|ht40|auto）
+      <span class="string">"htbw_autoreal"</span>:<span class="string">"ht40+"</span> //实际具体频宽值 (ht20|ht40)
+      <span class="string">"channel"</span>:<span class="string">"0"</span>      // <span class="number">0</span>为自动(<span class="number">1</span>~<span class="number">13</span>)
+      <span class="string">"channel_autoreal"</span>:<span class="string">"12"</span> // (<span class="number">1</span>~<span class="number">13</span>) 自动信道选择时，channel值为<span class="number">0</span>，此时该值表示具体工作信道
+    },
+    <span class="string">"radio1"</span>:{            // <span class="number">5</span>G，不支持则无此项
+      <span class="string">"txpwr"</span>:<span class="string">"max"</span>,      // min 环保(<span class="number">1</span>级),max 常规（<span class="number">2</span>级）,<span class="number">140</span> 穿墙（<span class="number">3</span>级）,<span class="number">150</span> 极穿墙（<span class="number">4</span>级）
+      <span class="string">"htbw"</span>:<span class="string">"ht40"</span>,      // 频宽（ht20|ht40|ht80|auto）
+      <span class="string">"htbw_autoreal"</span>:<span class="string">"ht40"</span> // 实际具体频宽值(ht20|ht40|ht80)
+      <span class="string">"channel"</span>:<span class="string">"36"</span>      // <span class="number">0</span>, <span class="number">36</span>,<span class="number">40</span>,<span class="number">44</span>,<span class="number">48</span>,<span class="number">149</span>,<span class="number">153</span>,<span class="number">157</span>,<span class="number">161</span>
+      <span class="string">"channel_autoreal"</span>:<span class="string">"36"</span> // <span class="number">36</span>,<span class="number">40</span>,<span class="number">44</span>,<span class="number">48</span>,<span class="number">149</span>,<span class="number">153</span>,<span class="number">157</span>,<span class="number">161</span> 自动信道选择时，channel值为<span class="number">0</span>，此时该值表示具体工作信道
+    }
+  }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_hidden"></a>
+    <strong>get_hidden (args)</strong>
+    </dt>
+    <dd>
+    获取无线接口是否隐藏SSID
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_hidden(args)
+
+ args = {
+  ifname=<span class="string">"master"</span>|<span class="string">"masterac"</span>|<span class="string">"slave"</span>|<span class="string">"slaveac"</span>|<span class="string">"guest"</span>|<span class="string">"guestac"</span>
+ }
+ master 无线<span class="number">2.4</span>G
+ masterac 无线<span class="number">5</span>G
+ slave 无线<span class="number">2.4</span>G apcli0
+ slaveac 无线<span class="number">5</span>G apclii0
+ guest 无线<span class="number">2.4</span>G 访客网络
+ guestac 无线<span class="number">5</span>G 访客网络
+
+ data = {
+  ifname = <span class="string">"master"</span>|<span class="string">"masterac"</span>|<span class="string">"guest"</span>|<span class="string">"guestac"</span>
+  option = <span class="string">"hidden"</span>
+  val = <span class="number">0</span>|<span class="number">1</span> //<span class="number">1</span>表示隐藏ssid
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_iface_info"></a>
+    <strong>get_iface_info (args)</strong>
+    </dt>
+    <dd>
+    获取某iface接口WiFi信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname = "master|masterac|slave|slaveac|guest|guestac"}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_iface_info(args)
+ data = {
+   device=<span class="string">"radio0"</span>,
+   ssid=<span class="string">"HiWiFi"</span>,
+   encryption=<span class="string">"mixed-psk"</span>,   // 加密方式
+   key=<span class="string">"abcd1234"</span>,           //  密码
+   authurl=<span class="string">"https://www.hiwiwif.com/api"</span>,   // <span class="number">802.1</span>x的验证服务器（encryption为<span class="string">"mixed-wpa"</span>）
+   auth_key=<span class="string">"abcd1234"</span>,         // <span class="number">802.1</span>x 密码，可以为空
+   hidden=<span class="number">0</span>|<span class="number">1</span>,
+   disabled=<span class="number">0</span>|<span class="number">1</span>,              // <span class="number">1</span>为被禁用
+   lowrssi=-<span class="number">99</span>,              // -<span class="number">99</span>到-<span class="number">1</span>
+   isolate=<span class="number">0</span>,              // <span class="number">1</span>为开启隔离，<span class="number">0</span>为不隔离。
+   bssid=<span class="string">"d4:ee:07:12:34:56"</span>  // 网络mac
+   status=<span class="number">0</span>|<span class="number">1</span>     // <span class="number">1</span>为启用状态，<span class="number">0</span>为非启用状态，当ifname为slave或slaveac时，则表示是否连接上RootAP
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_last_wps_status"></a>
+    <strong>get_last_wps_status (args)</strong>
+    </dt>
+    <dd>
+    获取最后一次wps配对信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_last_wps_status(args)
+
+ data = {
+  last_wps_mac=<span class="string">"d4:ee:07:07:00:11"</span>|<span class="string">""</span>,
+  last_wps_status=<span class="string">"success"</span>|<span class="string">"no"</span>,
+  last_wps_start_time=<span class="number">1440500427</span>|<span class="number">0</span>,
+  default_open_time=<span class="number">120</span>,
+  last_wps_device_name=<span class="string">"hiwifi"</span>|<span class="string">""</span>
+ }
+
+ last_wps_mac 最后一次wps配对的mac
+ last_wps_device_name 最后一次wps配对的设备名称
+ last_wps_status 最后一次wps配对的状态
+ last_wps_start_time 最后一次wps启动时间，时间戳
+ default_open_time 默认开放时间，单位秒</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_probelist"></a>
+    <strong>get_probelist (args)</strong>
+    </dt>
+    <dd>
+    获取指定接口的周围无线设备的MAC地址列表
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  ifname=<span class="string">"master"</span> // master/masterac
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_quality"></a>
+    <strong>get_quality (args)</strong>
+    </dt>
+    <dd>
+    获取当前无线信道干扰情况
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_quality(args)
+
+ args = {
+  ifname=<span class="string">"master"</span>|<span class="string">"masterac"</span>
+ }
+
+ data = {
+  state = <span class="string">"good"</span>|<span class="string">"normal"</span>|<span class="string">"bad"</span>
+  quality=<span class="string">"100"</span>
+ }
+
+ quality 信道干扰取值 <span class="number">1</span>-<span class="number">100</span>之间,值越小干扰越大
+ state 信道评分 good 好 normal 正常 bad 差</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_stalist"></a>
+    <strong>get_stalist (args)</strong>
+    </dt>
+    <dd>
+    获取已连接的无线设备列表
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_stalist(args)
+
+ args = {
+  ifname=<span class="string">"master"</span>|<span class="string">"masterac"</span>|<span class="string">"guest"</span>|<span class="string">"guestac"</span>
+ }
+ master 无线<span class="number">2.4</span>G
+ masterac 无线<span class="number">5</span>G
+ guest 无线<span class="number">2.4</span>G 访客网络
+ guestac 无线<span class="number">5</span>G 访客网络
+
+ data = {
+  stalist={
+    {macaddr=<span class="string">"D8:15:0D:3B:17:68"</span>,
+     rssi0=<span class="number">52</span>, //天线<span class="number">1</span>的rssi
+     rssi1=<span class="number">57</span>, //天线<span class="number">2</span>的rssi
+     rssi2=<span class="number">76</span>, //天线<span class="number">3</span>的rssi（<span class="number">3</span>天线产品用到）
+     mode=<span class="number">11</span>ac,
+     bw=<span class="number">40</span>M,
+     ccq=<span class="number">100</span>,
+     txbytes=<span class="number">5302445</span>,
+     rxbytes=<span class="number">3673431</span>,
+     txrate=<span class="number">360000</span>, //<span class="number">360</span>M
+     rxrate=<span class="number">162000</span>, //<span class="number">162</span>M
+     inact=<span class="number">60</span>,
+     assoctime=<span class="number">1234</span>
+    },
+    {
+     //省略...格式如上
+    }
+  }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_txpwr_list"></a>
+    <strong>get_txpwr_list (args)</strong>
+    </dt>
+    <dd>
+    获取支持的信号模式
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_txpwr_list(args)
+
+ data = {
+  txpwr_list={
+    {key=<span class="string">"min"</span>, title=<span class="string">"1级"</span>, txpwr_val=<span class="number">9</span>},
+    {key=<span class="string">"max"</span>, title=<span class="string">"2级"</span>, txpwr_val=<span class="number">100</span>},
+    {key=<span class="string">"140"</span>, title=<span class="string">"3级"</span>, txpwr_val=<span class="number">140</span>}, // 穿墙模式
+    {key=<span class="string">"150"</span>, title=<span class="string">"4级"</span>, txpwr_val=<span class="number">150</span>}  // 极穿墙模式
+  }
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_wisp_history"></a>
+    <strong>get_wisp_history (args)</strong>
+    </dt>
+    <dd>
+    获取中继历史
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_wisp_history(args)
+
+ <span class="string">"data"</span>:{
+   <span class="string">"bridge_history"</span>:[
+     {<span class="string">"ssid"</span>:<span class="string">"11"</span>,<span class="string">"key"</span>:<span class="string">"1234qqqq"</span>,<span class="string">"encryption"</span>:<span class="string">"mixed-psk"</span>},
+     {<span class="string">"ssid"</span>:<span class="string">"HiWiFi"</span>,<span class="string">"bssid"</span>:<span class="string">"D4:EE:07:01:12:34"</span>,<span class="string">"key"</span>:<span class="string">"1234mkop"</span>,<span class="string">"encryption"</span>:<span class="string">"mixed-psk"</span>}
+   ]
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "kick"></a>
+    <strong>kick (args)</strong>
+    </dt>
+    <dd>
+    踢掉接口下的某个设备并禁止其加入一次
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname,mac}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  ifname=<span class="string">"master"</span>, // master/masterac/guest/guestac/
+  mac=<span class="string">"ab:cd:ef:12:34:56"</span>   // 要踢掉的设备mac
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "merge_wifi"></a>
+    <strong>merge_wifi (args)</strong>
+    </dt>
+    <dd>
+    合并2.4G和5G
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = merge_wifi(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "reload_24g_sleep"></a>
+    <strong>reload_24g_sleep (args)</strong>
+    </dt>
+    <dd>
+    重新配置2.4G定时任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+        返回值
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "reload_5g_sleep"></a>
+    <strong>reload_5g_sleep (args)</strong>
+    </dt>
+    <dd>
+    重新配置5G定时任务
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+        返回值
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "reload_macfilter"></a>
+    <strong>reload_macfilter (args)</strong>
+    </dt>
+    <dd>
+    重新加载无线MAC地址过滤规则
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = reload_macfilter(args)
+
+ args = {
+  ifname=<span class="string">"master"</span>|<span class="string">"masterac"</span>|<span class="string">"guest"</span>|<span class="string">"guestac"</span>
+ }
+ master 无线<span class="number">2.4</span>G
+ masterac 无线<span class="number">5</span>G
+ guest 无线<span class="number">2.4</span>G 访客网络
+ guestac 无线<span class="number">5</span>G 访客网络</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set"></a>
+    <strong>set (args)</strong>
+    </dt>
+    <dd>
+    设置本地设备的wireless信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname,command}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  ifname=<span class="string">"master"</span>,   // master/masterac/guest/guestac/slave/slaveac
+  command=<span class="string">"ssid"</span>,   // 配置无线驱动命令
+  argu=<span class="string">"HiWifi"</span>,   // 参数，跟command有关
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_24g_sleep"></a>
+    <strong>set_24g_sleep (args)</strong>
+    </dt>
+    <dd>
+    设置2.4G健康定时
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {status=1, down_hour=23, down_min=0, up_hour=9, up_min=15, weekday_active=0|1}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = set_24g_sleep(args)
+ weekday_active 是否仅在工作日生效，<span class="number">1</span>是仅在工作日生效。默认<span class="number">0</span>，代表每天都有效</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_5g_sleep"></a>
+    <strong>set_5g_sleep (args)</strong>
+    </dt>
+    <dd>
+    设置5G健康定时
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {status=1, down_hour=23, down_min=0, up_hour=9, up_min=15, weekday_active=0|1}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+        {code, msg, data}</li>
+        <li>
+        data={}</li>
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = set_5g_sleep(args)
+ weekday_active 是否仅在工作日生效，<span class="number">1</span>是仅在工作日生效。默认<span class="number">0</span>，代表每天都有效</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_channel"></a>
+    <strong>set_channel (args)</strong>
+    </dt>
+    <dd>
+    设置 wifi 信道
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {device="radio0", channel=6}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  device=<span class="string">"radio0"</span>,   // radio0表示<span class="number">2.4</span>G,radio1表示<span class="number">5</span>G
+  channel=<span class="number">1</span>,   // <span class="number">0</span>到<span class="number">13</span>的数字, <span class="number">36</span>,<span class="number">40</span>,<span class="number">44</span>,<span class="number">48</span>,<span class="number">149</span>,<span class="number">153</span>,<span class="number">157</span>,<span class="number">161</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_guest_info"></a>
+    <strong>set_guest_info (args)</strong>
+    </dt>
+    <dd>
+    设置所有guest接口WiFi信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ssid="abc123", encryption="mixed-psk", key="abcd1234", hidden="0", isolate="0"}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_guest_info(args)
+ args={
+   ssid=<span class="string">"HiWiFi"</span>,
+   encryption=<span class="string">"mixed-psk"</span>,      // none不加密;
+   key=<span class="string">"abcd1234"</span>,              // 无线密码
+   authurl=<span class="string">"https://www.hiwiwif.com/api"</span>,   // <span class="number">802.1</span>x的验证服务器（必须同时配置encryption为<span class="string">"mixed-wpa"</span>）
+   auth_key=<span class="string">"abcd1234"</span>,         // <span class="number">802.1</span>x 密码，可以为空
+   hidden=<span class="number">0</span>,                    // <span class="number">1</span>为隐藏无线网络
+   isolate=<span class="number">0</span>,                   // <span class="number">1</span>为开启隔离，<span class="string">"0"</span>为不隔离
+   delay_time=<span class="number">0</span>,                // 延时delay_time秒重启无线,默认<span class="number">0</span>,立即生效
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_hidden"></a>
+    <strong>set_hidden (args)</strong>
+    </dt>
+    <dd>
+    设置无线接口隐藏SSID
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_hidden(args)
+
+ args = {
+  ifname=<span class="string">"master"</span>|<span class="string">"masterac"</span>|<span class="string">"slave"</span>|“slaveac”|“guest”|“guestac”
+  hidden=<span class="number">0</span>|<span class="number">1</span> //<span class="number">1</span>表示隐藏ssid
+ }
+ master 无线<span class="number">2.4</span>G
+ masterac 无线<span class="number">5</span>G
+ slave 无线<span class="number">2.4</span>G apcli0
+ slaveac 无线<span class="number">5</span>G apclii0
+ guest 无线<span class="number">2.4</span>G 访客网络
+ guestac 无线<span class="number">5</span>G 访客网络</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_htbw"></a>
+    <strong>set_htbw (args)</strong>
+    </dt>
+    <dd>
+    设置频宽 High Throughput
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {device,htbw}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ HT20是出于兼容性考虑：比如，一个区域内存在<span class="number">11</span>b/g信号，那么为了尽量减少对它们的干扰，需要设定为HT20，以减少频带的重叠。
+ HT40是出于高性能考虑：HT40相当于两个HT20的捆绑，一个是主，一个是辅。主信道发送beacon报文和部分数据报文，辅信道发送其他报文。
+
+ args = {
+  device=<span class="string">"radio0"</span>|<span class="string">"radio1"</span>
+  htbw=<span class="string">"ht20"</span>|<span class="string">"ht40"</span>|<span class="string">"auto"</span>,               // <span class="number">5</span>G支持<span class="string">"ht80"</span>
+ }
+ radio0 无线<span class="number">2.4</span>G
+ radio1 无线<span class="number">5</span>G</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_iface_info"></a>
+    <strong>set_iface_info (args)</strong>
+    </dt>
+    <dd>
+    设置某iface接口WiFi信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname="master", ssid="abc123", encryption="mixed-psk", key="abcd1234", hidden=0, isolate=0}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_iface_info(args)
+ args={
+   ifname=<span class="string">"master"</span>,             // master/masterac/guest/guestac/slave/slaveac
+   ssid=<span class="string">"HiWiFi"</span>,
+   encryption=<span class="string">"mixed-psk"</span>,      // none不加密;
+   key=<span class="string">"abcd1234"</span>,              // 无线密码
+   authurl=<span class="string">"https://www.hiwiwif.com/api"</span>,   // <span class="number">802.1</span>x的验证服务器（必须同时配置encryption为<span class="string">"mixed-wpa"</span>）
+   auth_key=<span class="string">"abcd1234"</span>,         // <span class="number">802.1</span>x 密码，可以为空
+   hidden=<span class="number">0</span>|<span class="number">1</span>,                    // <span class="number">1</span>为隐藏无线网络
+   isolate=<span class="number">0</span>|<span class="number">1</span>,                   // <span class="number">1</span>为隔离无线网络
+   delay_time=<span class="number">0</span>,                  // 延时delay_time秒重启无线,默认<span class="number">0</span>,立即生效
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_isolate"></a>
+    <strong>set_isolate (args)</strong>
+    </dt>
+    <dd>
+    设置无线隔离状态
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args = {
+   ifname=<span class="string">"master"</span>     // master|masterac
+   isolate=<span class="number">0</span>,        // 无线隔离状态，<span class="string">"1"</span>为隔离，<span class="string">"0"</span>为不隔离。未配置为<span class="string">""</span>，表示不隔离。
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_lowrssi"></a>
+    <strong>set_lowrssi (args)</strong>
+    </dt>
+    <dd>
+    设置自动踢掉的信号强度阈值
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> 若客户端信号强度低于（lowrssi - <span class="number">5</span>）将会被踢掉
+ args={
+  ifname = <span class="string">"master"</span>        // master|masterac
+  lowrssi=<span class="string">"-50"</span>,           // <span class="number">2.4</span>G(-<span class="number">99</span>到-<span class="number">1</span>),如果未设置则为<span class="string">""</span>
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_master_info"></a>
+    <strong>set_master_info (args)</strong>
+    </dt>
+    <dd>
+    设置所有master接口WiFi信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ssid="abc123", encryption="mixed-psk", key="abcd1234", hidden="0", isolate="0"}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_master_info(args)
+ args={
+   ssid=<span class="string">"HiWiFi"</span>,
+   encryption=<span class="string">"mixed-psk"</span>,      // none不加密;
+   key=<span class="string">"abcd1234"</span>,              // 无线密码
+   authurl=<span class="string">"https://www.hiwiwif.com/api"</span>,   // <span class="number">802.1</span>x的验证服务器（必须同时配置encryption为<span class="string">"mixed-wpa"</span>）
+   auth_key=<span class="string">"abcd1234"</span>,         // <span class="number">802.1</span>x 密码，可以为空
+   hidden=<span class="number">0</span>,                    // <span class="number">1</span>为隐藏无线网络
+   isolate=<span class="number">0</span>,                   // <span class="number">1</span>为开启隔离，<span class="number">0</span>为不隔离
+   delay_time=<span class="number">0</span>,                  // 延时delay_time秒重启无线,默认<span class="number">0</span>,立即生效
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_master_status"></a>
+    <strong>set_master_status (args)</strong>
+    </dt>
+    <dd>
+    所有带master无线接口开关
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         开 {status=1} 关 {status=0}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = set_master_status(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_txpwr"></a>
+    <strong>set_txpwr (args)</strong>
+    </dt>
+    <dd>
+    设置 wifi 信号强度
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {device="radio0", txpwr="min"}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_txpwr(args)
+
+ device 需设置信道的设备
+ radio0 <span class="number">2.4</span>G
+ radio1 <span class="number">5</span>G
+
+ txpwr 信号强度列表
+ min 环保(<span class="number">1</span>级)
+ max 常规（<span class="number">2</span>级）
+ <span class="number">140</span> 穿墙（<span class="number">3</span>级）
+ <span class="number">150</span> 极穿墙（<span class="number">4</span>级）</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_wisp"></a>
+    <strong>set_wisp (args)</strong>
+    </dt>
+    <dd>
+    设置中继信息
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = set_wisp(args)
+
+ args = {
+   ssid=<span class="string">"HiWiFi"</span>,
+   key=<span class="string">"Geek1234"</span>,
+   encryption=<span class="string">"psk2"</span>,
+   bssid=<span class="string">"d4:ee:07:01:11:22"</span>,
+   channel=<span class="number">6</span>,
+   guide=<span class="string">"0"</span>|<span class="string">"1"</span>,
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "smart"></a>
+    <strong>smart (args)</strong>
+    </dt>
+    <dd>
+    smart config快连接入
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname,mac,ssid,psk}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  ifname=<span class="string">"master"</span>,   // master 目前只支持master
+  mac=<span class="string">"ab:cd:ef:12:34:56"</span>,   // 需要通过smart config连接的设备（极卫星等）的mac地址
+  ssid=<span class="string">"hiwifi_ac"</span>,   // AC的ssid，可选参数
+  psk=<span class="string">"mixed-psk"</span>,  // AC的psk
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "split_wifi"></a>
+    <strong>split_wifi (args)</strong>
+    </dt>
+    <dd>
+    拆分2.4G和5G
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {}
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        {code, msg, data}
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">ret = split_wifi(args)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "start"></a>
+    <strong>start (args)</strong>
+    </dt>
+    <dd>
+    start无线接口
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ 启动处于disabled状态的指定无线接口，并修改uci配置，标示该接口已启动
+
+ args={
+  ifname=<span class="string">"master"</span> // master/masterac/guest/guestac/slave/slaveac
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "stop"></a>
+    <strong>stop (args)</strong>
+    </dt>
+    <dd>
+    stop无线接口
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ 关闭指定已启动的无线接口，并修改uci配置，将其置于disabled状态
+
+ args={
+  ifname=<span class="string">"master"</span> // master/masterac/guest/guestac/slave/slaveac
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "up"></a>
+    <strong>up (args)</strong>
+    </dt>
+    <dd>
+    up设备
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {device}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ 根据无线配置，重启无线设备，常用于修改uci配置后，调用该接口可使配置生效
+
+ args={
+  device=<span class="string">"radio0"</span> // radio0为<span class="number">2.4</span>G，radio1为<span class="number">5</span>G
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "validate_iface_info"></a>
+    <strong>validate_iface_info (args)</strong>
+    </dt>
+    <dd>
+    检查某iface接口WiFi参数是否正确
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname="master", ssid="abc123", encryption="mixed-psk", key="abcd1234", hidden=0, isolate=0}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = validate_iface_info(args)
+ args={
+   ifname=<span class="string">"master"</span>,             // master/masterac/guest/guestac/slave/slaveac
+   ssid=<span class="string">"HiWiFi"</span>,
+   encryption=<span class="string">"mixed-psk"</span>,      // none不加密;
+   key=<span class="string">"abcd1234"</span>,              // 无线密码
+   authurl=<span class="string">"https://www.hiwiwif.com/api"</span>,   // <span class="number">802.1</span>x的验证服务器（必须同时配置encryption为<span class="string">"mixed-wpa"</span>）
+   auth_key=<span class="string">"abcd1234"</span>,         // <span class="number">802.1</span>x 密码，可以为空
+   hidden=<span class="number">0</span>|<span class="number">1</span>,                    // <span class="number">1</span>为隐藏无线网络
+   isolate=<span class="number">0</span>|<span class="number">1</span>,                   // <span class="number">1</span>为隔离无线网络
+   delay_time=<span class="number">0</span>,                  // 延时delay_time秒重启无线,默认<span class="number">0</span>
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "wps_start"></a>
+    <strong>wps_start (args)</strong>
+    </dt>
+    <dd>
+    开启wps
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  ifname=<span class="string">"master"</span> // master/masterac/slave/slaveac
+ }</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "wps_stop"></a>
+    <strong>wps_stop (args)</strong>
+    </dt>
+    <dd>
+    关闭wps
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">args</span>
+         {ifname}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">
+ args={
+  ifname=<span class="string">"master"</span> // master/masterac/slave/slaveac
+ }</pre>
+    </ul>
+
+</dd>
+</dl>
+    <h2><a name="Fields"></a>Fields</h2>
+    <dl class="function">
+    <dt>
+    <a name = "args"></a>
+    <strong>args</strong>
+    </dt>
+    <dd>
+    获取 wifi 信号强度
+
+
+    <ul>
+        <li><span class="parameter">args</span>
+         {device="radio0"|"radio1"}
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"> ret = get_txpwr(args)
+ device=<span class="string">"radio0"</span> <span class="number">2.4</span>G
+ device=<span class="string">"radio1"</span> <span class="number">5</span>G</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.2</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
